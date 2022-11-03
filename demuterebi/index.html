@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>デムテレビ</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favico.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="language" content="en/jp">
+	<meta name="title" content="デムテレビ">
+	<meta name="author" content="ダニー">
+	<meta name="copyright" content="©2000-2022 ダニー">
+	<meta name="robots" content="index, follow">
+	<meta name="subject" content="デムテレビ">
+	<meta name="keywords" content="デムテレビ">
+	<meta name="description" content="デムテレビ">
+	<meta name="classification" content="デムテレビ">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="デムテレビ">
+	<meta property="og:image" content="favico.png">
+	<meta property="og:locale" content="en/jp">
+	<meta property="og:site_name" content="デムテレビ">
+	<meta property="og:description" content="デムテレビ">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<script src="time.js"></script>
+	<script src="hover.js"></script>
+	<script src="urlfix.js"></script>
+	<script src="light.js"></script>
+	<script>
+		urlchk();
+		var timerID = setInterval(function () {
+			gettime();
+			
+		}, 60 * 1);
+		
+		setTimeout(function(){ 
+			holiday();
+			lightchk();
+		}, 1500);
+		
+	</script>
+</head>
+<body>
+	<audio autoplay>
+		<source src="startup.wav" type="audio/mp3">
+	</audio>
+	<audio id="hover">
+		<source src="hover.wav" type="audio/mp3">
+	</audio>
+	<audio id="selected">
+		<source src="select.wav" type="audio/mp3">
+	</audio>
+	
+	<div class="bg" id ="bg">
+	</div>
+		<div class="content">
+			
+			<div class="grid-topbar">
+				<div class="grid-item">
+					<h class="clock" id="time">TIME</h>
+					<div class="switch" id="switchbutt" onclick="light()"></div>
+				</div>
+			</div>
+		
+		
+			<div class="grid-main">
+				<div class="grid-item">
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://pbs.lls.cdn.pbs.org/est/index.m3u8">
+								<img src="banners/pbs.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://www.wwlp.com/watch-live/">
+								<img src="banners/wwlp.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="http://v-pi.theus6tv.duckdns.org/hls/10.1/playlist.m3u8">
+								<img src="banners/nbc10.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/index.m3u8">
+								<img src="banners/newsy.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f36d726234ce10007784f2a/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS">
+								<img src="banners/bobross.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5812b7d3249444e05d09cc49/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5812b7d3249444e05d09cc49&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=830&terminate=false&userId=">
+								<img src="banners/animeallday.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://contvanime-vizio-ingest.cinedigm.com/master.m3u8">
+								<img src="banners/contvanime.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="http://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5ca673e0d0bd6c2689c94ce3/master.m3u8?advertisingId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&appVersion=unknown&coppa=1&deviceDNT=0&deviceId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceUA=samsung/SM-T720/10&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain=https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&samsung_app_name=Mobile+TV+Plus&us_privacy=1YNY">
+								<img src="banners/nick.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://tve-live-lln.warnermediacdn.com/hls/live/2023167/tooneast/slate/VIDEO_0_3564000.m3u8">
+								<img src="banners/cn.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="http://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?advertisingId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&appVersion=unknown&deviceDNT=0&deviceId=91a6ae51-6f9d-4fbb-adb0-bdfffa44693e&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceUA=samsung/SM-T720/10&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain=https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&samsung_app_name=Mobile+TV+Plus&us_privacy=1YNY">
+								<img src="banners/paramount.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://linear-59.frequency.stream/dist/roku/59/hls/master/playlist.m3u8">
+								<img src="banners/hiya.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://loop-80s-2.roku.wurl.com/manifest/playlist.m3u8">
+								<img src="banners/loop80s.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8">
+								<img src="banners/nhkworld.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://nhk3.mov3.co/hls/nhk.m3u8">
+								<img src="banners/nhkg.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://ntv3.mov3.co/hls/ntv.m3u8">
+								<img src="banners/ntv.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://tbs2.mov3.co/hls/tbs.m3u8">
+								<img src="banners/tbs.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://fujitv3.mov3.co/hls/fujitv.m3u8">
+								<img src="banners/fujitv.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://ok.ru/videoembed/4654517591799">
+								<img src="banners/tokyomx.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+</body>
+</html>
+

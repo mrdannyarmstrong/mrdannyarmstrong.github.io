@@ -1,0 +1,156 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+	overflow: auto;
+	background-color: #202225;
+}
+
+.grid-main {
+	width: auto;
+	height: 77%;
+	display: grid;
+	overflow: hidden;
+	margin-top: 6%;
+	margin-left: 12%;
+}
+
+.bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+	
+.content {
+	  position: absolute;
+	  left: 50%; 
+	  margin-top: 0px;
+	  transform: translateX(-50%);
+	  width: 100%;
+}
+
+.grid-item2 {
+	margin-left: 120px;
+}
+
+.grid-main2 {
+	width: auto;
+	height: 77%;
+	display: grid;
+	overflow: hidden;
+	margin-top: 6%;
+	margin-left: 4%;
+}
+
+.grid-channel {
+	width: 280px;
+	height: 280px;
+	border-radius: 25px;
+	display: inline-block;
+	overflow: hidden;
+	border: solid 3px #454950;
+	margin-top: 10px;
+}
+
+.grid-channel:hover {
+	border: solid 3px #008080;
+}
+
+.logo {
+	width: 280px;
+	height: 280px;
+}
+
+.grid-topbar {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clock {
+	font-family: main;
+	font-size: 48px;
+	color: white;
+	display: inline-block;
+}
+
+.switch {
+	width: 34pt;
+	height: 34pt;
+	background-image: url(switch.svg);
+	background-repeat: no-repeat;
+	background-size: 34pt, 34pt;
+	display: inline-block;
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		overflow: auto;
+	}
+
+	.grid-main {
+		width: auto;
+		height: auto;
+		display: grid;
+		overflow: auto;
+		margin-left: 0%;
+		margin-top: 52px;
+		float: center;
+	}
+
+	.grid-channel {
+		text-align: center;
+		width: 280px;
+		height: 280px;
+		border-radius: 25px;
+		display: grid;
+		overflow: hidden;
+		margin-top: 10px;
+		margin-left: 12%
+	}
+		
+	.logo {
+		width: 280px;
+		height: 280px;
+	}
+
+	.grid-topbar {
+		width: 100%;
+		height: 80px;
+		text-align: center;
+		position: absolute;
+		top: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.clock {
+	   font-family: main;
+	   font-size: 48px;
+	   color: white;
+	}
+}
