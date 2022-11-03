@@ -1,0 +1,213 @@
+body {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+	font-family: main;
+    src: url(main.ttf);
+}
+
+h1 {
+	font-family: main;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: main;
+}
+
+h3 {
+	font-family: main;
+}
+
+h4 {
+	font-family: main;
+}
+
+a {
+	font-family: main;
+}
+
+button {
+	font-family: main;
+	border: none;
+	background-color: #4E6CB3;
+	border-radius: 25px;
+	color: white;
+	height: 28px;
+}
+
+.desknav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(53,160,76,0.8);
+        width: 100%;
+		display: block;
+		position: fixed;
+		top: 0;
+}
+
+li {
+        float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family: main;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(44,137,66,0.8);
+}
+
+li a.active {
+    background-color: rgba(12,128,64,0.8);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #35A04C;
+    position: fixed;
+    width: 100%;
+	display: none;
+	top: 0;
+    }
+
+.topnav #myLinks {
+	display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-size: 20pt;
+}
+
+.topnav a.icon {
+	background: none;
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #2C8942;
+}
+
+.activemob {
+	background-color: #0C8040;
+}
+
+.bar {
+    background-color: #35A04C;
+    height: 48px;
+	display: none;
+}
+
+.grid-noie {
+	width: auto;
+	height: auto;
+	text-align: center;
+	
+}
+
+.grid-banner {
+	width: 100%;
+	height: 88px;
+	background-color: #DDDDDD;
+	padding-top: 6px;
+	margin-top: 47px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
+}
+
+.bannertext {
+	text-align: center;
+	font-weight: 800;
+}
+
+.grid-shell {
+	width: 100%;
+	height: 1080px;
+	background-color: white;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.grid-obj1 {
+	width: 148px;
+	height: 128px;
+	text-align: center;
+	color: black;
+	margin-top: 8px;
+	display: inline-grid;
+}
+
+.grid-obj2 {
+	width: 148px;
+	height: 368px;
+	text-align: center;
+	color: black;
+	margin-top: 8px;
+	display: inline-grid;
+}
+
+.grid-copyright {
+	width: 100%;
+	height: 148px;
+	background-color: #35A04C;
+	text-align: center;
+	color: white;
+}
+
+.coyprighttext {
+	text-align: center;
+	color: white;
+}
+
+@media (max-width: 600px) {
+	.desknav {
+		display: none;
+	}
+	
+	.topnav {
+		display: block;
+	}
+	
+	.bar {
+		display: block;
+	}
+	.grid-obj1 {
+		display: grid;
+		height: 148px;
+	}
+	
+	.grid-obj2 {
+		width: 148px;
+		height: 368px;
+		text-align: center;
+		color: black;
+		margin-top: 8px;
+		display: grid;
+	}
+	.grid-shell {
+		width: 100%;
+		height: 2080px;
+		background-color: white;
+		text-align: center;
+		margin-top: 8px;
+	}
+}
