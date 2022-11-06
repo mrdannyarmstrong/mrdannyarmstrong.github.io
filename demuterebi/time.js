@@ -18,54 +18,54 @@ function holiday() {
 	month=d.getMonth() + 1;
 	if (month == 5 & day == 10) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/bday.svg)";
+		bg.style.backgroundImage="url(bg/bday.jpg)";
 		time.style.color="black"
 	}
 	if (month == 1 & day == 1) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/newyear.svg)";
+		bg.style.backgroundImage="url(bg/newyear.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 2 & day == 14) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/valentines.svg)";
+		bg.style.backgroundImage="url(bg/valentines.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 3 & day == 17) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/stpatricks.svg)";
+		bg.style.backgroundImage="url(bg/stpatricks.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 4 & day >= 1 & day <= 7) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/spring.svg)";
+		bg.style.backgroundImage="url(bg/spring.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 7 & day == 4) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/usaindp.svg)";
+		bg.style.backgroundImage="url(bg/usaindp.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 9 & day >= 1 & day <= 7) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/spring.svg)";
+		bg.style.backgroundImage="url(bg/spring.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 10 & day == 31) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/halloween.svg)";
+		bg.style.backgroundImage="url(bg/halloween.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 11 & day >= 25 & day <= 29) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/thanksgiving.svg)";
+		bg.style.backgroundImage="url(bg/thanksgiving.jpg)";
 		time.style.color="black"
 	}
 	
@@ -73,19 +73,19 @@ function holiday() {
 	
 	if (month == 12 & day == 25) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/christmas.svg)";
+		bg.style.backgroundImage="url(bg/christmas.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 12 & day == 30) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/newyear.svg)";
+		bg.style.backgroundImage="url(bg/newyear.jpg)";
 		time.style.color="black"
 	}
 	
 	if (month == 12 & day == 31) {
 		switchbutt.style.display="none";
-		bg.style.backgroundImage="url(bg/newyear.svg)";
+		bg.style.backgroundImage="url(bg/newyear.jpg)";
 		time.style.color="black"
 	}
 }
