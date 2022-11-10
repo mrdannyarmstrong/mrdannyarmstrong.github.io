@@ -1,0 +1,125 @@
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(47,48,96);
+}
+
+.activetab {
+	background-image: url(activetab.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	width: 141px;
+	height: 35px;
+	text-align: center;
+}
+
+.inactivetab {
+	background-image: url(inactivetab.jpg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	width: 141px;
+	height: 35px;
+	text-align: center;
+}
+
+.taburl {
+	color: white;
+	font-family: Arial;
+}
+
+.main {
+	background-image: url(main.jpg);
+	background-repeat: no-repeat;
+	background-size: 480px, 320px;
+	width: 480px;
+	height: 320px;
+	margin-top: -12px;
+	white-space: nowrap;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.exclusive {
+	width: 96%;
+	height: 96%;
+	overflow-x: hidden;
+	margin-top: 2%;
+}
+
+.channelbox {
+	width: 457px;
+	height: 99%;
+	white-space: nowrap;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+.channelnumbox {
+	background-color: black;
+	border: solid 2px white;
+}
+
+.channelnum {
+	font-family: Arial;
+	color: white;
+}
+
+.channelnamebox {
+	width: 90%;
+	border: solid 2px white;
+	text-align: center;
+}
+
+.channelnamebox:hover {
+	border: solid 2px rgb(18,249,243);
+}
+
+.datetime {
+	width: 211px;
+	height: 69px;
+	background-image: url(datetime.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%,100%;
+	margin-top:-1%
+}
+
+.date {
+	
+	margin-top: -21px;
+	margin-left: 0px;
+	color: white;
+	font-family: arial;
+}
+
+.time {
+	
+	margin-top: -18px;
+	color: white;
+	font-family: arial;
+	font-weight: normal;
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.main {
+		background-image: url(main.jpg);
+		background-repeat: no-repeat;
+		background-size: 100%,100%;
+		width: 75%;
+		height:260px;
+		margin-top: -12px;
+	}
+	
+	.channelnamebox {
+	text-align: left;	
+	}
+	}
+}
