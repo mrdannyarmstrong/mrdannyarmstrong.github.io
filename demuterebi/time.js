@@ -14,7 +14,7 @@
 
 function holiday() {
 	d = new Date();
-	day=d.getDay();
+	day=d.getDate();
 	month=d.getMonth() + 1;
 	if (month == 5 & day == 10) {
 		switchbutt.style.display="none";
@@ -63,13 +63,17 @@ function holiday() {
 		time.style.color="black"
 	}
 	
-	if (month == 11 & day >= 25 & day <= 29) {
+	if (month == 11 & day >= 20 & day <= 29) {
 		switchbutt.style.display="none";
 		bg.style.backgroundImage="url(bg/thanksgiving.jpg)";
 		time.style.color="black"
 	}
 	
-	
+	if (month == 12 & day == 24) {
+		switchbutt.style.display="none";
+		bg.style.backgroundImage="url(bg/christmas.jpg)";
+		time.style.color="black"
+	}
 	
 	if (month == 12 & day == 25) {
 		switchbutt.style.display="none";
