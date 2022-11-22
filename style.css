@@ -41,78 +41,62 @@ button {
 }
 
 .desknav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgba(53,160,76,0.8);
-        width: 100%;
-		display: block;
-		position: fixed;
-		top: 0;
-}
-
-li {
-        float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    font-family: main;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: rgba(44,137,66,0.8);
-}
-
-li a.active {
-    background-color: rgba(12,128,64,0.8);
-}
-
-.topnav {
-    overflow: hidden;
-    background-color: #35A04C;
-    position: fixed;
-    width: 100%;
-	display: none;
+	width: 97.37%;
+	background-color: rgba(82,183,136,0.8);
+	height: 56px;
+	margin-top: -4px;
+	display: block;
+	text-align: center;
+	position: fixed;
 	top: 0;
-    }
+}
 
-.topnav #myLinks {
+.desknavitem {
+	display: inline-block;
+	font-size: 19.5px;
+	float: left;
+	padding: 14px 16px;
+	color: white;
+	
+}
+
+.desknavitem:hover {
+	background-color: rgba(64,145,108,0.8);
+	font-size: 19.5px;
+}
+
+.deskurl {
+	color: white;
+	text-decoration: none;
+	font-size: 19.5px;
+}
+
+.activedesk {
+	background-color: rgba(45,106,97,0.8);
+	display: inline-block;
+	font-size: 19.5px;
+	float: left;
+	padding: 14px 16px;
+	color: white;
+}
+
+.mobbar {
 	display: none;
 }
 
-.topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-size: 20pt;
+.mobnav {
+	display: none;
 }
 
-.topnav a.icon {
-	background: none;
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
+.mobnavitem {
+	display: none;
 }
 
-.topnav a:hover {
-    background-color: #2C8942;
+.mobnavitem:hover {
+	background-color: #40916C;
 }
 
 .activemob {
-	background-color: #0C8040;
-}
-
-.bar {
-    background-color: #35A04C;
-    height: 48px;
 	display: none;
 }
 
@@ -128,7 +112,7 @@ li a.active {
 	height: 88px;
 	background-color: #DDDDDD;
 	padding-top: 6px;
-	margin-top: 47px;
+	margin-top: 52px;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
@@ -149,7 +133,7 @@ li a.active {
 
 .grid-obj1 {
 	width: 148px;
-	height: 128px;
+	height: 148px;
 	text-align: center;
 	color: black;
 	margin-top: 8px;
@@ -168,7 +152,7 @@ li a.active {
 .grid-copyright {
 	width: 100%;
 	height: 148px;
-	background-color: #35A04C;
+	background-color: #52B788;
 	text-align: center;
 	color: white;
 }
@@ -183,16 +167,60 @@ li a.active {
 		display: none;
 	}
 	
-	.topnav {
+	.mobbar {
+		display: block;
+		width: 100%;
+		height: 55px;
+		margin-top: -4px;
+		background-color: #52B788;
+		position: fixed;
+		top: 0;
+	}
+	
+	.mobnavbutt:hover {
+		background-color: #40916C;
+	}
+	
+	.mobnavbutt2 {
+		background-color: #2D6A4F;
+		display:none;
+	}
+	
+	.mobnav {
+		display: none;
+		width: 100%;
+		height: auto;
+		list-style: none;
+		background-color: #52B788;
+		margin-top: 0px;
+		position: fixed;
+	}
+	
+	.mobnavurl {
+		color: white;
+		font-size: 24pt;
+	}
+	
+	.mobnavitem {
+		padding: 14px 16px;
+		margin-left: -40px;
 		display: block;
 	}
 	
-	.bar {
+	.mobnavitem:hover {
+		background-color: #40916C;
+	}
+	
+	.activemob {
+		background-color: #2D6A4F;
+		padding: 14px 16px;
+		margin-left: -40px;
 		display: block;
 	}
 	.grid-obj1 {
 		display: grid;
 		height: 148px;
+		margin-left: 40%;
 	}
 	
 	.grid-obj2 {
@@ -209,5 +237,15 @@ li a.active {
 		background-color: white;
 		text-align: center;
 		margin-top: 8px;
+	}
+	.grid-banner {
+		width: 100%;
+		height: 88px;
+		background-color: #DDDDDD;
+		padding-top: 6px;
+		margin-top: 51px;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
 	}
 }

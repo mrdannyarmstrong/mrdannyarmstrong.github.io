@@ -3,21 +3,19 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="2022px" height="88px" viewBox="0 0 2022 88" enable-background="new 0 0 2022 88" xml:space="preserve">
-<rect fill="#BA687A" width="2022" height="88"/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="31.21" y1="45" x2="93.5582" y2="45">
-	<stop  offset="0" style="stop-color:#D17D87"/>
-	<stop  offset="0.49" style="stop-color:#D17E87"/>
-	<stop  offset="0.5" style="stop-color:#D17181"/>
-	<stop  offset="1" style="stop-color:#D17181"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1175.96" y1="-80.6602" x2="1175.96" y2="-168.6602" gradientTransform="matrix(1 0 0 -1 -164.96 -80.6602)">
+	<stop  offset="0" style="stop-color:#9BC1E6"/>
+	<stop  offset="1" style="stop-color:#4F6CB4"/>
 </linearGradient>
-<ellipse fill="url(#SVGID_1_)" cx="62.295" cy="45" rx="32.17" ry="32.076"/>
+<rect fill="url(#SVGID_1_)" width="2022" height="88"/>
+<ellipse fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" cx="62.295" cy="45" rx="32.17" ry="32.076"/>
 <line fill="none" x1="87.787" y1="64.557" x2="88.042" y2="64.232"/>
 <g>
 	<path fill="#FFFFFF" d="M65.736,26.218c0.967,0.326,1.451,0.739,1.451,1.237v3.452c0,0.46-0.484,0.834-1.451,1.122
 		c-0.968,0.288-2.134,0.431-3.495,0.431c-3.225,0-4.838-0.518-4.838-1.553v-3.452c0-0.498,0.465-0.911,1.397-1.237
 		c0.931-0.326,2.078-0.489,3.44-0.489C63.603,25.729,64.769,25.892,65.736,26.218z M67.188,39.248v28.131
 		c0,0.729-0.484,1.323-1.451,1.784c-0.968,0.46-2.08,0.69-3.333,0.69c-1.255,0-2.402-0.192-3.44-0.576
-		c-1.04-0.383-1.559-1.016-1.559-1.898V39.248c0-0.69,0.465-1.256,1.397-1.697c0.931-0.44,2.043-0.662,3.333-0.662
+		c-1.04-0.383-1.559-1.019-1.559-1.898V39.248c0-0.69,0.465-1.256,1.397-1.697c0.931-0.44,2.043-0.662,3.333-0.662
 		c1.291,0,2.455,0.183,3.494,0.546C66.667,37.801,67.188,38.405,67.188,39.248z"/>
 </g>
 </svg>

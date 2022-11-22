@@ -3,21 +3,10 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="128px" height="64px" viewBox="0 0 128 64" enable-background="new 0 0 128 64" xml:space="preserve">
-<rect fill="#F9FCFC" stroke="#1C4591" stroke-width="2" stroke-miterlimit="10" width="127.583" height="64"/>
-<rect fill="#1D4895" width="127.583" height="10.5"/>
-<rect x="120.621" y="2.229" fill="#EC203B" width="5.725" height="6.042"/>
-<rect x="5.667" y="15.667" fill="#1D4895" width="45.167" height="42.167"/>
-<polygon fill="#4E6CB4" points="36.242,57.643 19.688,57.833 5.667,57.833 13.218,43.018 20.771,28.203 28.507,42.923 "/>
-<polygon fill="#67A9BA" points="50.833,57.833 35.969,57.833 20.257,57.833 27.81,43.018 35.362,28.203 43.098,42.923 "/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="16.423" x2="90.506" y2="16.423"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="20.384" x2="111.181" y2="20.384"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="24.345" x2="111.181" y2="24.345"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="28.038" x2="111.181" y2="28.038"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="32" x2="111.181" y2="32"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="36.75" x2="111.181" y2="36.75"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="40.712" x2="111.181" y2="40.712"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="43.989" x2="111.181" y2="43.989"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="47.951" x2="111.181" y2="47.951"/>
-<line fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" x1="53.12" y1="51.346" x2="85.23" y2="51.346"/>
-<rect x="101.156" y="53.771" fill="none" stroke="#C3C3C2" stroke-width="2" stroke-miterlimit="10" width="19.465" height="6.306"/>
+<g>
+	<rect x="0.959" y="2.625" stroke="#1C4594" stroke-width="2" stroke-miterlimit="10" width="126.225" height="60.375"/>
+	<rect fill="#1C4594" width="128.132" height="5.25"/>
+	<path fill="#9ECC49" d="M31.485,34.975L7.917,49.559v-4.246L27.93,33.314v-0.127L7.917,21.128v-4.247l23.568,14.645V34.975z"/>
+	<path fill="#9ECC49" d="M60.25,54.175v3.075H34.854v-3.075H60.25z"/>
+</g>
 </svg>

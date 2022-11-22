@@ -3,10 +3,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="128px" height="64px" viewBox="0 0 128 64" enable-background="new 0 0 128 64" xml:space="preserve">
-<g>
-	<polygon fill="#F5F6F6" points="128.386,64 66.5,64 -0.001,63.938 31.974,44.117 63.952,24.297 96.169,43.72 	"/>
-	<polygon fill="#E1E1E1" points="-0.001,63.969 -0.001,32.781 -0.001,0.031 36.572,15.402 71.654,31.072 36.987,47.64 	"/>
-	<polygon fill="#E8EAEA" points="128,63.969 128,32.781 128,0.031 91.427,15.402 56.345,31.072 91.013,47.64 	"/>
-	<polygon fill="#2C8942" points="0.001,0.031 61.827,0 128,0.031 96.291,20.495 64.194,40.121 32.095,20.506 	"/>
-</g>
+<rect x="1" y="1.333" fill="#FFFFFF" stroke="#818181" stroke-width="2" stroke-miterlimit="10" width="125.5" height="61.167"/>
+<rect x="109.339" y="4.3" fill="#ED1C24" width="14.097" height="13.999"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="5.331" y1="5.953" x2="21.1" y2="5.953"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="5.331" y1="11.3" x2="21.1" y2="11.3"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="5.331" y1="18.299" x2="21.1" y2="18.299"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="40.505" y1="31.917" x2="86.996" y2="31.917"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="40.505" y1="36.536" x2="86.996" y2="36.536"/>
+<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="40.505" y1="42.748" x2="86.996" y2="42.748"/>
 </svg>
