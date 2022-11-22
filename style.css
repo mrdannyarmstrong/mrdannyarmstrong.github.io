@@ -43,7 +43,7 @@ button {
 .desknav {
 	width: 97.37%;
 	background-color: rgba(82,183,136,0.8);
-	height: 51px;
+	height: 55px;
 	margin-top: -4px;
 	display: block;
 	text-align: center;
@@ -54,7 +54,7 @@ button {
 .desknavitem {
 	display: inline-block;
 	font-size: 19.5px;
-	float: left;
+	float: center;
 	padding: 14px 16px;
 	color: white;
 	
@@ -75,7 +75,7 @@ button {
 	background-color: rgba(45,106,97,0.8);
 	display: inline-block;
 	font-size: 19.5px;
-	float: left;
+	float: center;
 	padding: 14px 16px;
 	color: white;
 }
@@ -112,7 +112,7 @@ button {
 	height: 88px;
 	background-color: #DDDDDD;
 	padding-top: 6px;
-	margin-top: 47px;
+	margin-top: 51px;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
