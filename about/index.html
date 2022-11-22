@@ -2,27 +2,7 @@
 <html>
 	<head>
 		<title>Danny Armstrong: About</title>
-		<link rel="icon" type="image/png" href="../favico.png">
-		<meta name="description" content="About">
-		<meta itemprop="name" content="Danny Armstrong">
-		<meta itemprop="description" content="About">
-		<meta itemprop="image" content="../favbanner.jpg">
-
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="http://dannyarmstrong.rf.gd">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Danny Armstrong">
-		<meta property="og:description" content="About">
-		<meta property="og:image" content="../favbanner.jpg">
-
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="Danny Armstrong">
-		<meta name="twitter:description" content="About">
-		<meta name="twitter:image" content="favbanner.jpg">
 		<link rel="stylesheet" href="../style.css">
-		<link rel="stylesheet" href="fontman.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,42 +11,47 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="../touch-icon-ipad.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="../touch-icon-iphone-retina.png">
 		<link rel="apple-touch-icon" sizes="167x167" href="../touch-icon-ipad-retina.png">
-		<script src="../urlfix.js"></script>
+		<meta name="language" content="en">
+		<meta name="title" content="Danny Armstrong: About">
+		<meta name="author" content="Danny Armstrong">
+		<meta name="copyright" content="©2000-2022 Danny Armstrong">
+		<meta name="robots" content="index, follow">
+		<meta name="subject" content="About">
+		<meta name="keywords" content="Danny Armstrong, About, Website">
+		<meta name="description" content="Danny Armstrong's official website">
+		<meta name="classification" content="About">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Danny Armstrong: About">
+		<meta property="og:image" content="../favbanner.jpg">
+		<meta property="og:locale" content="en">
+		<meta property="og:site_name" content="Danny Armstrong: About">
+		<meta property="og:description" content="Danny Armstrong: About">
 		<script src="../mobnav.js"></script>
 		<script src="../noie.js"></script>
 		<script>
 			window.onload = function() {
 				noiechk();
-				setTimeout(function() { 
-					urlchk();
-					mobnav();
-				}, 1500);
 			}
 		</script>
 	</head>
 	<body>
 		<ul class="desknav">
-					<li><a href="../">Home</a></li>
-					<li><a href="../code">Code</a></li>
-					<li><a href="../music">Music</a></li>
-					<li><a class="active" href="../about">About</a></li>
-					<li><a href="../contact">Contact</a></li>
-				</ul>
-			
-			<div class="topnav" id="mobnav">
-				<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-				<a href="javascript:void(0);" class="icon" onclick="mobnav()">
-					<i class="fa fa-bars"></i>
-				</a>
-				<div class="bar"> </div>
-				<div id="myLinks">
-					<a href="../">Home</a>
-					<a href="../code">Code</a>
-					<a href="../music">Music</a>
-					<a class="activemob" href="../about">About</a>
-					<a href="../contact">Contact</a>
-				</div>
-			</div>
+			<li class="desknavitem"><a class="deskurl" href="../">Home</a></li>
+			<li class="desknavitem"><a class="deskurl" href="../code/">Code</a></li>
+			<li class="desknavitem"><a class="deskurl" href="../music/">Music</a></li>
+			<li class="activedesk"><a class="deskurl" href="../about/">About</a></li>
+			<li class="desknavitem"><a class="deskurl" href="../contact/">Contact</a></li>
+		</ul>
+		<div class="mobbar">
+			<img src="../mobnav.svg" class="mobnavbutt" id="mobnavbutt" onclick="showmobnav()">
+		</div>
+		<ul class="mobnav" id="mobnav">
+			<li class="mobnavitem"><a href="../" class="mobnavurl">Home</a></li>
+			<li class="mobnavitem"><a href="../code/" class="mobnavurl">Code</a></li>
+			<li class="mobnavitem"><a href="../music/" class="mobnavurl">Music</a></li>
+			<li class="activemob"><a href="../about/" class="mobnavurl">About</a></li>
+			<li class="mobnavitem"><a href="../contact/" class="mobnavurl">Contact</a></li>
+		</ul>
 			
 			<div class="grid-banner" style="background-image: url(../aboutbanner.svg);">
 				<div class="grid-item">
