@@ -230,6 +230,7 @@ button {
 		color: black;
 		margin-top: 8px;
 		display: grid;
+		margin-left: 40%;
 	}
 	.grid-shell {
 		width: 100%;
