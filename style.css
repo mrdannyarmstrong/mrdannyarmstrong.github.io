@@ -43,7 +43,7 @@ button {
 .desknav {
 	width: 97.37%;
 	background-color: rgba(82,183,136,0.8);
-	height: 56px;
+	height: 51px;
 	margin-top: -4px;
 	display: block;
 	text-align: center;
@@ -112,7 +112,7 @@ button {
 	height: 88px;
 	background-color: #DDDDDD;
 	padding-top: 6px;
-	margin-top: 52px;
+	margin-top: 51px;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
