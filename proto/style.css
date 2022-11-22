@@ -90,8 +90,10 @@ a {
 	height: 64px;
 	border: solid 2px white;
 	margin-left: 30%;
-	text-align: center
+	text-align: center;
 	display: none;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .bannertext {
