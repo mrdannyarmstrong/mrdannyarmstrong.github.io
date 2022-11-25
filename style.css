@@ -53,45 +53,45 @@ button {
 .grid-banner {
 	width: 100%;
 	height: 208px;
-	background-color: #2C8942;
 	background-image: url(homebg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: grid;
+	border-bottom: solid 2px #222222;
 }
 
 .grid-codebox {
 	width: 100%;
 	height: 208px;
-	background-color: #52B788;
 	background-image: url(codebg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: grid;
+	border-bottom: solid 2px #222222;
 }
 
 .grid-webbox {
 	width: 100%;
 	height: 208px;
-	background-color: #506CB3;
 	background-image: url(webbg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: grid;
+	border-bottom: solid 2px #222222;
 }
 
 .grid-musicbox {
 	width: 100%;
 	height: 208px;
-	background-color: #BE2025;
 	background-image: url(musicbg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	display: grid;
+	border-bottom: solid 2px #222222;
 }
 
 .grid-tabp1 {
@@ -130,7 +130,6 @@ button {
 .grid-about {
 	width: 100%;
 	height: 288px;
-	background-color: #D07181;
 	background-image: url(aboutbg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -138,13 +137,13 @@ button {
 	text-align: center;
 	color: black;
 	display: grid;
+	border-bottom: solid 2px #222222;
 }
 
 
 .grid-contact {
 	width: 100%;
 	height: 288px;
-	background-color: #2C8942;
 	background-image: url(contactbg.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
