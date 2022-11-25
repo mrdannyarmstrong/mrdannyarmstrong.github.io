@@ -1,0 +1,172 @@
+body {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+	font-family: main;
+    src: url(main.ttf);
+}
+
+h1 {
+	font-family: main;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: main;
+	font-weight: normal;
+}
+
+h3 {
+	font-family: main;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: main;
+	font-weight: normal;
+}
+
+a {
+	font-family: main;
+	font-weight: normal;
+}
+
+button {
+	background-color: white;
+	border: none;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #222222;
+}
+
+.grid-noie {
+	width: auto;
+	height: auto;
+	text-align: center;
+	
+}
+
+.grid-banner {
+	width: 100%;
+	height: 208px;
+	background-color: #2C8942;
+	background-image: url(homebg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+}
+
+.grid-codebox {
+	width: 100%;
+	height: 208px;
+	background-color: #52B788;
+	background-image: url(codebg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+}
+
+.grid-webbox {
+	width: 100%;
+	height: 208px;
+	background-color: #506CB3;
+	background-image: url(webbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+}
+
+.grid-musicbox {
+	width: 100%;
+	height: 208px;
+	background-color: #BE2025;
+	background-image: url(musicbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	display: grid;
+}
+
+.grid-tabp1 {
+	width: 40%;
+	height: 48px;
+	background-color: white;
+	border: solid 2px white;
+	display: grid;
+	margin-left: 30%;
+	text-align: center;
+	margin-top: 8px;
+	color: #222222;
+	
+}
+
+.grid-tabp2 {
+	width: 40%;
+	height: 74px;
+	border: solid 2px white;
+	margin-left: 30%;
+	text-align: center
+	display: none;
+}
+
+.bannertext2 {
+	text-align: center;
+	color: #222222;
+}
+
+
+.bannertext {
+	text-align: center;
+	color: white;
+}
+
+.grid-about {
+	width: 100%;
+	height: 288px;
+	background-color: #D07181;
+	background-image: url(aboutbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	color: black;
+	display: grid;
+}
+
+
+.grid-contact {
+	width: 100%;
+	height: 288px;
+	background-color: #2C8942;
+	background-image: url(contactbg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	display: grid;
+}
+
+.coyprighttext {
+	text-align: center;
+	color: black;
+}
+
+@media (max-width: 600px) {
+	.grid-tabp1 {
+		width: 80%;
+		margin-left: 10%;
+	}
+	
+	.grid-tabp2 {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
