@@ -4,7 +4,7 @@ function noiechk() {
 
     if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
     {
-       window.location = "https://dannyarmstrong.rf.gd/noie/";
+       window.location = "https://mrdannyarmstrong.github.io/noie/";
     }
     else  // If another browser, return 0
     {
