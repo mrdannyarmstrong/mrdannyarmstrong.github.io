@@ -35,6 +35,13 @@ a {
 	font-weight: normal;
 }
 
+button {
+	background-color: white;
+	border: none;
+	border-radius: 25px;
+	font-size: 18px;
+}
+
 .grid-noie {
 	width: auto;
 	height: auto;
@@ -87,13 +94,11 @@ a {
 
 .grid-tabp2 {
 	width: 40%;
-	height: 64px;
+	height: 74px;
 	border: solid 2px white;
 	margin-left: 30%;
-	text-align: center;
+	text-align: center
 	display: none;
-	white-space: nowrap;
-	overflow: hidden;
 }
 
 .bannertext {
