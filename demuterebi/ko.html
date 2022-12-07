@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>데무TV</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favico.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="language" content="ko">
+	<meta name="title" content="데무TV">
+	<meta name="author" content="대니">
+	<meta name="copyright" content="©2000-2022 대니">
+	<meta name="robots" content="index, follow">
+	<meta name="subject" content="데무TV">
+	<meta name="keywords" content="데무TV">
+	<meta name="description" content="데무TV">
+	<meta name="classification" content="데무TV">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="데무TV">
+	<meta property="og:image" content="favico.png">
+	<meta property="og:locale" content="ko">
+	<meta property="og:site_name" content="데무TV">
+	<meta property="og:description" content="데무TV">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<script src="ko.js"></script>
+	<script src="hover.js"></script>
+	<script src="urlfix.js"></script>
+	<script src="light.js"></script>
+	<script>
+		var timerID = setInterval(function () {
+			gettime();
+			
+		}, 60 * 1);
+		
+		setTimeout(function(){ 
+			lightchk();
+		}, 1500);
+		
+	</script>
+</head>
+<body>
+	<audio autoplay>
+		<source src="startup.wav" type="audio/mp3">
+	</audio>
+	<audio id="hover">
+		<source src="hover.wav" type="audio/mp3">
+	</audio>
+	<audio id="selected">
+		<source src="select.wav" type="audio/mp3">
+	</audio>
+	
+	<div class="bg" id ="bg">
+	</div>
+		<div class="content">
+			
+			<div class="grid-topbar">
+				<div class="grid-item">
+					<h class="clock" id="time">TIME</h>
+					<div class="switch" id="switchbutt" onclick="light()"></div>
+				</div>
+			</div>
+		
+		
+			<div class="grid-main">
+				<div class="grid-item">
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://www.sbs.co.kr/en/live/S01?div=live_list">
+								<img src="banners/ko/sbs.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://onair.kbs.co.kr/index.html?sname=onair&stype=live&ch_code=12&ch_type=globalList">
+								<img src="banners/ko/kbs2.svg" class="logo">
+							</a>
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://onair.kbs.co.kr/index.html?sname=onair&stype=live&ch_code=11&ch_type=globalList">
+								<img src="banners/ko/kbs1.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://onair.kbs.co.kr/index.html?sname=onair&stype=live&ch_code=81&ch_type=globalList">
+								<img src="banners/ko/kbs24.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<br>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="http://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8">
+								<img src="banners/ko/ebs1.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="http://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8">
+								<img src="banners/ko/ebs2.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							<a href="https://youtube.com/embed/ed6eUpCoZSE">
+								<img src="banners/ko/mbc.svg" class="logo">
+							</a>
+						</div>
+					</div>
+
+					<a href="http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8">
+						<div class="grid-channel" onmouseover="hoverfx()">
+							<div class="grid-item">
+								
+							</div>
+						</div>
+					</a>
+
+					<br>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<br>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+					<div class="grid-channel" onmouseover="hoverfx()">
+						<div class="grid-item">
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+</body>
+</html>
+
