@@ -101,7 +101,6 @@ button {
 	text-align: center;
 	margin-top: 8px;
 	color: #222222;
-	
 }
 
 .grid-tabp2 {
@@ -109,7 +108,7 @@ button {
 	height: 74px;
 	border: solid 2px white;
 	margin-left: 30%;
-	text-align: center
+	text-align: center;
 	display: none;
 }
 
