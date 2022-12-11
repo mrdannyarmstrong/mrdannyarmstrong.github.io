@@ -90,6 +90,15 @@ a {
 	display: inline-block;
 }
 
+.clockbox {
+	font-family: main;
+	font-size: 48px;
+	color: white;
+	display: inline-block;
+	width: 155px;
+	height: 64px;
+}
+
 .switch {
 	width: 34pt;
 	height: 34pt;

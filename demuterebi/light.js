@@ -9,7 +9,8 @@ function light() {
 	selected.play();
 	window.location = "#light";
 	 document.body.style.backgroundColor = "white"; 
-	time.style.color="black";
+	ustime.style.color="black";
+	jptime.style.color="black";
 	switchbutt.style.backgroundImage = "url(switch2.svg)";
 	switchbutt.onclick = function() { dark(); }
 }
@@ -17,7 +18,8 @@ function light() {
 function lightm() {
 	window.location = "#light";
 	 document.body.style.backgroundColor = "white"; 
-	time.style.color="black";
+	ustime.style.color="black";
+	jptime.style.color="black";
 	switchbutt.style.backgroundImage = "url(switch2.svg)";
 	switchbutt.onclick = function() { dark(); }
 }
@@ -27,6 +29,7 @@ function dark() {
 	window.location = "#";
 	 document.body.style.backgroundColor = "#202225"; 
 	switchbutt.style.backgroundImage = "url(switch.svg)";
-	time.style.color="white";
+	ustime.style.color="white";
+	jptime.style.color="white";
 	switchbutt.onclick = function() { light(); }
 }
