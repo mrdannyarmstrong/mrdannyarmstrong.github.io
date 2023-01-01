@@ -1,0 +1,139 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+	overflow: hidden;
+	background-color: #e8ebe9;
+}
+
+.grid-main {
+	width: 100%;
+	height: 77%;
+	display: grid;
+	margin-top: 88px;
+	margin-left: 1%;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.grid-channel {
+	width: 480px;
+	height: 480px;
+	border-radius: 25px;
+	display: inline-block;
+	overflow: hidden;
+	border: solid 3px rgba(255, 255, 255, 0.4);
+	margin-top: 10px;
+}
+
+.grid-channel:hover {
+	border: solid 3px #03bac4;
+
+}
+
+.logo {
+	width: 480px;
+	height: 480px;
+}
+
+.grid-bottombar {
+	width: 100%;
+	height: 280px;
+	background-repeat: no-repeat;
+	background-size: 100%, 200%;
+	text-align: center;
+	margin-top: 8px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clock {
+	display: none;
+}
+
+.date {
+	display: none;
+}
+
+.grid-topbar {
+	width: 100%;
+	height: 34px;
+	display: grid;
+	position: absolute;
+	top: 0;
+	text-align: right;
+}
+
+.clocknew {
+	font-family: main;
+	font-size: 34pt;
+	color: #2b2927;
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		overflow: auto;
+	}
+
+	.grid-main {
+		width: auto;
+		height: auto;
+		display: grid;
+		overflow: auto;
+		margin-left: 0%;
+		margin-top: 38px;
+		float: center;
+	}
+
+	.grid-channel {
+		text-align: center;
+		width: 280px;
+		height: 280px;
+		border-radius: 25px;
+		display: grid;
+		overflow: hidden;
+		border: solid 3px rgba(255,255,255,0.4);
+		margin-top: 10px;
+	}
+
+		.grid-channel:hover {
+			border: solid 3px #03bac4;
+		}
+
+		.logo {
+			width: 280px;
+			height: 280px;
+		}
+
+	.grid-bottombar {
+		display: grid;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.clock {
+		display: none;
+	}
+
+	.date {
+		display: none;
+	}
+}
