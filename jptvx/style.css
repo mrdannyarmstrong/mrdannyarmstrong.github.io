@@ -15,9 +15,9 @@ body {
 
 .grid-main {
 	width: 100%;
-	height: 77%;
+	height: 584px;
 	display: grid;
-	margin-top: 88px;
+	margin-top: 30px;
 	margin-left: 1%;
 	white-space: nowrap;
 	overflow-x: auto;
@@ -26,15 +26,27 @@ body {
 
 .grid-channel {
 	width: 480px;
-	height: 480px;
-	border-radius: 25px;
+	height: 550px;
 	display: inline-block;
 	overflow: hidden;
-	border: solid 3px rgba(255, 255, 255, 0.4);
-	margin-top: 10px;
+	color: rgba(0,0,0,0);
 }
 
 .grid-channel:hover {
+	color: #03bac4;
+
+}
+
+.grid-channelblank {
+	width: 480px;
+	height: 480px;
+	display: inline-block;
+	overflow: hidden;
+	color: rgba(0,0,0,0);
+	border: solid 3px rgba(255, 255, 255, 0.4);
+}
+
+.grid-channelblank:hover {
 	border: solid 3px #03bac4;
 
 }
@@ -42,27 +54,25 @@ body {
 .logo {
 	width: 480px;
 	height: 480px;
+	border: solid 3px rgba(255, 255, 255, 0.4);
+}
+
+.logo:hover {
+	border: solid 3px #03bac4;
 }
 
 .grid-bottombar {
 	width: 100%;
-	height: 280px;
+	height: 140px;
 	background-repeat: no-repeat;
 	background-size: 100%, 200%;
 	text-align: center;
 	margin-top: 8px;
+	text-align: ;
 }
 
 a {
 	text-decoration: none;
-}
-
-.clock {
-	display: none;
-}
-
-.date {
-	display: none;
 }
 
 .grid-topbar {
@@ -74,10 +84,18 @@ a {
 	text-align: right;
 }
 
-.clocknew {
+.clock {
 	font-family: main;
 	font-size: 34pt;
 	color: #2b2927;
+}
+
+.switch {
+	
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	background-image: url(switch.svg);
 }
 
 @media (max-width: 600px) {
@@ -105,12 +123,22 @@ a {
 		text-align: center;
 		width: 280px;
 		height: 280px;
-		border-radius: 25px;
 		display: grid;
 		overflow: hidden;
 		border: solid 3px rgba(255,255,255,0.4);
 		margin-top: 10px;
 	}
+	
+	.grid-channelblank {
+		text-align: center;
+		width: 280px;
+		height: 280px;
+		display: grid;
+		overflow: hidden;
+		border: solid 3px rgba(255,255,255,0.4);
+		margin-top: 10px;
+	}
+
 
 		.grid-channel:hover {
 			border: solid 3px #03bac4;
@@ -128,12 +156,8 @@ a {
 	a {
 		text-decoration: none;
 	}
-
-	.clock {
-		display: none;
-	}
-
-	.date {
+	
+	.title {
 		display: none;
 	}
 }

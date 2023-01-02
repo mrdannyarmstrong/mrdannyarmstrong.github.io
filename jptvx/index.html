@@ -28,11 +28,12 @@
 	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 	<script src="time.js"></script>
 	<script src="hover.js"></script>
+	<script src="dark.js"></script>
 	<script src="nochan.js"></script>
 	<script>
 		var timerID = setInterval(function () {
 			gettime();
-			getdate();
+			darkchk();
 		}, 60 * 1);
 	</script>
 </head>
@@ -52,7 +53,7 @@
 	
 	<div class="grid-topbar" onmouseover="hoverfx()">
 		<div class="grid-item">
-			<h class="clocknew" id="timenew">TIME</h>		
+			<h class="clock" id="time">TIME</h>		
 		</div>
 	</div>
 			
@@ -60,17 +61,19 @@
 	<div class="grid-main">
 		<div class="grid-item">
 
-			<a href="https://nhk3.mov3.co/hls/nhk.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-						<img src="banners/JOAK-DTV.svg" class="logo">
+						<h2 class="title">NHK-G</h2>
+						<a href="https://nhk3.mov3.co/hls/nhk.m3u8" onmouseover="hoverfx()">
+							<img src="banners/JOAK-DTV.svg" class="logo">
+						</a>
 					</div>
 				</div>
-			</a>
 
 			<a href="" onmouseover="hoverfx()" onclick="nochan()">
 				<div class="grid-channel">
 					<div class="grid-item">
+					<h2 class="title">NHK-E</h2>
 						<img src="banners/JOAB-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -79,6 +82,7 @@
 			<a href="https://ntv3.mov3.co/hls/ntv.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
+						<h2 class="title">NTV</h2>
 						<img src="banners/JOAX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -87,6 +91,7 @@
 			<a href="" onmouseover="hoverfx()" onclick="nochan()">
 				<div class="grid-channel">
 					<div class="grid-item">
+						<h2 class="title">TV Asahi</h2>
 						<img src="banners/JOEX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -96,6 +101,7 @@
 			<a href="https://tbs2.mov3.co/hls/tbs.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
+					<h2 class="title">TBS</h2>
 						<img src="banners/JORX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -104,6 +110,7 @@
 			<a href="" onmouseover="hoverfx()" onclick="nochan()">
 				<div class="grid-channel">
 					<div class="grid-item">
+					<h2 class="title">TV Tokyo</h2>
 						<img src="banners/JOTX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -113,6 +120,7 @@
 			<a href="https://fujitv3.mov3.co/hls/fujitv.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
+					<h2 class="title">Fuji TV</h2>
 						<img src="banners/JOCX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -121,33 +129,34 @@
 			<a href="https://ok.ru/videoembed/4654517591799" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
+					<h2 class="title">Tokyo MX</h2>
 						<img src="banners/JOMX-DTV.svg" class="logo">
 					</div>
 				</div>
 			</a>
 
 
-			<div class="grid-channel" onmouseover="hoverfx()">
+			<div class="grid-channelblank" onmouseover="hoverfx()">
 				<div class="grid-item">
-					
+					<h2 class="title" style="color: rgba(0,0,0,0);">...</h2>
 				</div>
 			</div>
 
-			<div class="grid-channel" onmouseover="hoverfx()">
+			<div class="grid-channelblank" onmouseover="hoverfx()">
 				<div class="grid-item">
-					
+					<h2 class="title" style="color: rgba(0,0,0,0);">...</h2>
 				</div>
 			</div>
 
-			<div class="grid-channel" onmouseover="hoverfx()">
+			<div class="grid-channelblank" onmouseover="hoverfx()">
 				<div class="grid-item">
-					
+					<h2 class="title" style="color: rgba(0,0,0,0);">...</h2>
 				</div>
 			</div>
 
-			<div class="grid-channel" onmouseover="hoverfx()">
+			<div class="grid-channelblank" onmouseover="hoverfx()">
 				<div class="grid-item">
-					
+					<h2 class="title" style="color: rgba(0,0,0,0);">...</h2>
 				</div>
 			</div>
 
@@ -156,9 +165,9 @@
 
 	<div class="grid-bottombar">
 		<div class="grid-item">
-			<h class="clock" id="time">TIME</h>
-			<br><div></div><br>
-			<h class="date" id="date" style="height: 48px;">DATE</h>
+			<center>
+				<div class="switch" id="switchbutt" onclick="dark()"></div>
+			</center>
 		</div>
 	</div>
 </body>
