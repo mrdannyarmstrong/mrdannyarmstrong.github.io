@@ -29,6 +29,7 @@
 	<script src="time.js"></script>
 	<script src="hover.js"></script>
 	<script src="dark.js"></script>
+	<script src="user.js"></script>
 	<script src="nochan.js"></script>
 	<script>
 		var timerID = setInterval(function () {
@@ -50,8 +51,16 @@
 	<audio id="prefs">
 		<source src="prefs.wav" type="audio/mp3">
 	</audio>
+	<audio id="uzers">
+		<source src="user.wav" type="audio/mp3">
+	</audio>
 	
-	<div class="grid-topbar" onmouseover="hoverfx()">
+	<div class="grid-topbara">
+		<div class="grid-item">
+			<img src="user.png" style="width:48px; height: 48px; border-radius: 50px;" onclick="user()">	
+		</div>
+	</div>
+	<div class="grid-topbarb">
 		<div class="grid-item">
 			<h class="clock" id="time">TIME</h>		
 		</div>
@@ -63,17 +72,17 @@
 
 				<div class="grid-channel">
 					<div class="grid-item">
-						<h2 class="title">NHK-G</h2>
+						<h2 class="title">NHK総合テレビジョン</h2>
 						<a href="https://nhk3.mov3.co/hls/nhk.m3u8" onmouseover="hoverfx()">
 							<img src="banners/JOAK-DTV.svg" class="logo">
 						</a>
 					</div>
 				</div>
 
-			<a href="" onmouseover="hoverfx()" onclick="nochan()">
+			<a href="http://redlabmcdn.s.llnwi.net/nv02/ryowa1hd/index.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-					<h2 class="title">NHK-E</h2>
+					<h2 class="title">NHK教育テレビジョン</h2>
 						<img src="banners/JOAB-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -82,16 +91,16 @@
 			<a href="https://ntv3.mov3.co/hls/ntv.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-						<h2 class="title">NTV</h2>
+						<h2 class="title">日テレ</h2>
 						<img src="banners/JOAX-DTV.svg" class="logo">
 					</div>
 				</div>
 			</a>
 
-			<a href="" onmouseover="hoverfx()" onclick="nochan()">
+			<a href="http://redlabmcdn.s.llnwi.net/nv02/ryowa4hd/index.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-						<h2 class="title">TV Asahi</h2>
+						<h2 class="title">テレビ朝日</h2>
 						<img src="banners/JOEX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -107,10 +116,10 @@
 				</div>
 			</a>
 
-			<a href="" onmouseover="hoverfx()" onclick="nochan()">
+			<a href="https://ok.ru/videoembed/4811368177268" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-					<h2 class="title">TV Tokyo</h2>
+					<h2 class="title">テレ東</h2>
 						<img src="banners/JOTX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -120,7 +129,7 @@
 			<a href="https://fujitv3.mov3.co/hls/fujitv.m3u8" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-					<h2 class="title">Fuji TV</h2>
+					<h2 class="title">フジテレビ</h2>
 						<img src="banners/JOCX-DTV.svg" class="logo">
 					</div>
 				</div>
@@ -129,7 +138,7 @@
 			<a href="https://ok.ru/videoembed/4654517591799" onmouseover="hoverfx()">
 				<div class="grid-channel">
 					<div class="grid-item">
-					<h2 class="title">Tokyo MX</h2>
+					<h2 class="title">東京MX</h2>
 						<img src="banners/JOMX-DTV.svg" class="logo">
 					</div>
 				</div>

@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	height: 584px;
 	display: grid;
-	margin-top: 30px;
+	margin-top: 0;
 	margin-left: 1%;
 	white-space: nowrap;
 	overflow-x: auto;
@@ -75,14 +75,20 @@ a {
 	text-decoration: none;
 }
 
-.grid-topbar {
-	width: 100%;
+.grid-topbara {
+	width: 48%;
 	height: 34px;
-	display: grid;
-	position: absolute;
-	top: 0;
+	display: inline-grid;
+	text-align: left;
+}
+
+.grid-topbarb {
+	width: 48%;
+	height: 34px;
+	display: inline-grid;
 	text-align: right;
 }
+
 
 .clock {
 	font-family: main;
@@ -115,7 +121,7 @@ a {
 		display: grid;
 		overflow: auto;
 		margin-left: 0%;
-		margin-top: 38px;
+		margin-top: 48px;
 		float: center;
 	}
 
@@ -127,6 +133,7 @@ a {
 		overflow: hidden;
 		border: solid 3px rgba(255,255,255,0.4);
 		margin-top: 10px;
+		margin-left: 20%;
 	}
 	
 	.grid-channelblank {
@@ -137,6 +144,7 @@ a {
 		overflow: hidden;
 		border: solid 3px rgba(255,255,255,0.4);
 		margin-top: 10px;
+		margin-left: 20%;
 	}
 
 
@@ -159,5 +167,14 @@ a {
 	
 	.title {
 		display: none;
+	}
+	
+	.grid-topbara {
+		width: 41%;
+	 text-align: right;	
+	}
+	
+	.grid-topbarb {
+	 text-align: left;	
 	}
 }
