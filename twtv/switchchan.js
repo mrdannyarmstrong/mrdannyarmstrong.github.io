@@ -1,17 +1,17 @@
 ﻿function switchchan(channum) {
 	if (channum == 2) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://youtube.com/embed/TCnaIE_SAtM" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://www.youtube.com/embed/TCnaIE_SAtM" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan2"
 	}
 	if (channum == 5) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://youtube.com/embed/4Uc00FPs27M" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://www.youtube.com/embed/4Uc00FPs27M" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan5"
 	}
 	if (channum == 8) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://youtube.com/embed/dZp87qnWelE" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://www.youtube.com/embed/dZp87qnWelE" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan8"
 	}
 	if (channum == 9) {
@@ -41,12 +41,12 @@
 	}
 	if (channum == 16) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://youtube.com/embed/xL0ch83RAK8" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://www.youtube.com/embed/xL0ch83RAK8" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan16"
 	}
 	if (channum == 19) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://youtube.com/embed/wM0g8EoUZ_E" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://www.youtube.com/embed/wM0g8EoUZ_E" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan19"
 	}
 	if (channum == 22) {
