@@ -36,7 +36,7 @@
 	}
 	if (channum == 14) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://player.streamingtvguides.com/?src=http%3A%2F%2Fstreamipcf.akamaized.net%2Flive%2F_definst_%2Fsmil%3Aliveabr.smil%2Fplaylist.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://player.streamingtvguides.com/?src=http%3A%2F%2Fstreamipcf.akamaized.net%2Flive%2F_definst_%2Fsmil%3Aliveabr.smil%2Fplaylist.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan14"
 	}
 	if (channum == 16) {
@@ -51,12 +51,12 @@
 	}
 	if (channum == 22) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://player.streamingtvguides.com/?src=https%3A%2F%2Flylive-videorent.cdn.hinet.net%2Fout%2Fu%2Flive%2Fgop4%2Fly%2Fly-Live1%2Fhls-cl-tv%2Findex.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://player.streamingtvguides.com/?src=https%3A%2F%2Flylive-videorent.cdn.hinet.net%2Fout%2Fu%2Flive%2Fgop4%2Fly%2Fly-Live1%2Fhls-cl-tv%2Findex.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#chan22"
 	}
 	if (channum == 23) {
 		tvbox.innerHTML = '';
-		tvbox.innerHTML += '<iframe src="http://player.streamingtvguides.com/?src=https%3A%2F%2Flylive-videorent.cdn.hinet.net%2Fout%2Fu%2Flive%2Fgop4%2Fly%2Fly-Live2%2Fhls-cl-tv%2Findex.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
+		tvbox.innerHTML += '<iframe src="https://player.streamingtvguides.com/?src=https%3A%2F%2Flylive-videorent.cdn.hinet.net%2Fout%2Fu%2Flive%2Fgop4%2Fly%2Fly-Live2%2Fhls-cl-tv%2Findex.m3u8&demoConfig=eyJlbmFibGVTdHJlYW1pbmciOnRydWUsImF1dG9SZWNvdmVyRXJyb3IiOnRydWUsImVuYWJsZVdvcmtlciI6dHJ1ZSwiZHVtcGZNUDQiOmZhbHNlLCJsZXZlbENhcHBpbmciOi0xLCJsaW1pdE1ldHJpY3MiOi0xLCJ3aWRldmluZUxpY2Vuc2VVcmwiOiIifQ==" style="width: 100%; height: 100%;"></iframe>';
 		window.location = "#23"
 	}
 }
