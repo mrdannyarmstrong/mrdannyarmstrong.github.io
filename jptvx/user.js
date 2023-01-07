@@ -1,3 +1,0 @@
-function user() {
-	uzers.play();
-}
