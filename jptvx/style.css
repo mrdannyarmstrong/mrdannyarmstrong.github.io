@@ -1,0 +1,180 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+	overflow: hidden;
+	background-color: #e8ebe9;
+}
+
+.grid-main {
+	width: 100%;
+	height: 584px;
+	display: grid;
+	margin-top: 0;
+	margin-left: 1%;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.grid-channel {
+	width: 485px;
+	height: 557px;
+	display: inline-block;
+	overflow: hidden;
+	color: rgba(0,0,0,0);
+}
+
+.grid-channel:hover {
+	color: #03bac4;
+
+}
+
+.grid-channelblank {
+	width: 480px;
+	height: 480px;
+	display: inline-block;
+	overflow: hidden;
+	color: rgba(0,0,0,0);
+	border: solid 3px rgba(255, 255, 255, 0.4);
+}
+
+.grid-channelblank:hover {
+	border: solid 3px #03bac4;
+
+}
+
+.logo {
+	width: 480px;
+	height: 480px;
+	border: solid 3px rgba(255, 255, 255, 0.4);
+}
+
+.logo:hover {
+	border: solid 3px #03bac4;
+}
+
+.grid-bottombar {
+	width: 100%;
+	height: 140px;
+	background-repeat: no-repeat;
+	background-size: 100%, 200%;
+	text-align: center;
+	margin-top: 8px;
+	text-align: ;
+}
+
+a {
+	text-decoration: none;
+}
+
+.grid-topbara {
+	width: 48%;
+	height: 34px;
+	display: inline-grid;
+	text-align: left;
+}
+
+.grid-topbarb {
+	width: 48%;
+	height: 34px;
+	display: inline-grid;
+	text-align: right;
+}
+
+
+.clock {
+	font-family: main;
+	font-size: 34pt;
+	color: #2b2927;
+}
+
+.switch {
+	
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	background-image: url(switch.svg);
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		overflow: auto;
+	}
+
+	.grid-main {
+		width: auto;
+		height: auto;
+		display: grid;
+		overflow: auto;
+		margin-left: 0%;
+		margin-top: 48px;
+		float: center;
+	}
+
+	.grid-channel {
+		text-align: center;
+		width: 280px;
+		height: 280px;
+		display: grid;
+		overflow: hidden;
+		border: solid 3px rgba(255,255,255,0.4);
+		margin-top: 10px;
+		margin-left: 20%;
+	}
+	
+	.grid-channelblank {
+		text-align: center;
+		width: 280px;
+		height: 280px;
+		display: grid;
+		overflow: hidden;
+		border: solid 3px rgba(255,255,255,0.4);
+		margin-top: 10px;
+		margin-left: 20%;
+	}
+
+
+	.grid-channel:hover {
+		border: solid 3px #03bac4;
+	}
+
+	.logo {
+		width: 280px;
+		height: 280px;
+	}
+
+	.grid-bottombar {
+		display: grid;
+	}
+
+	a {
+		text-decoration: none;
+	}
+	
+	.title {
+		display: none;
+	}
+	
+	.grid-topbara {
+		width: 41%;
+		text-align: right;	
+	}
+	
+	.grid-topbarb {
+	 text-align: left;	
+	}
+}
