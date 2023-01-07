@@ -1,0 +1,89 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+}
+
+.topbar {
+	width: 100%;
+	height: 56px;
+}
+
+.date {
+	font-family: main;
+	font-size: 36px;
+}
+
+.time {
+	font-family: main;
+	font-size: 36px;
+}
+
+.tvbox {
+	width: 55%;
+	height: 512px;
+	display: inline-grid;
+}
+
+.tvchan {
+	width: 43%;
+	height: 512px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: center;
+}
+
+.logo {
+	display: grid;
+	width: 34.5%;
+}
+
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+	}
+	
+	.date {
+		font-family: main;
+		font-size: 24px;
+	}
+
+	.time {
+		font-family: main;
+		font-size: 24px;
+	}
+	
+	.tvbox {
+		width: 99%;
+		height: 256px;
+		display: grid;
+	}
+	
+	.tvchan {
+		width: 99%;
+		display: grid;
+	}
+	
+	.logo {
+		display: grid;
+		width: 50%;
+	}
+
+	
+}

@@ -1,1 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>台灣電視台</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="flag_tw.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="language" content="zh-tw">
+	<meta name="title" content="台灣電視台">
+	<meta name="author" content="丹尼">
+	<meta name="copyright" content="©2000-2022 丹尼">
+	<meta name="robots" content="index, follow">
+	<meta name="subject" content="台灣電視台">
+	<meta name="keywords" content="台灣電視台">
+	<meta name="description" content="台灣電視台">
+	<meta name="classification" content="台灣電視台">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="台灣電視台">
+	<meta property="og:image" content="flag_tw.png">
+	<meta property="og:locale" content="zh-tw">
+	<meta property="og:site_name" content="台灣電視台">
+	<meta property="og:description" content="台灣電視台">
+	<link rel="apple-touch-icon" href="flag_tw.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="flag_tw.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="flag_tw.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="flag_tw.png">
+	<script src="time.js"></script>
+	<script src="switchchan.js"></script>
+	<script>
+		onload = function() {
+			autochan();
+		}
+		var timerID = setInterval(function () {
+			gettime();
+			getdate();
+		}, 60 * 1);
+	</script>
+</head>
+<body>
+
+	<div class="topbar">
+		<img src="flag_tw.png" width="64px" height="48px">
+		<h class="date" id="date">DATE</h>
+		<h class="time" id="time">TIME</h>
+	</div>
+	
+	<div class="tvbox" id="tvbox">
+		<iframe src="http://youtube.com/embed/" style="width: 100%; height: 100%;"></iframe>
+	</div>
+	
+	<div class="tvchan">
+		<img src="banners/ctvnews.png" class="logo" alt="ctvnews" onclick="switchchan(2)">
+		<img src="banners/pts.png" class="logo" alt="pts" onclick="switchchan(5)">
+		<img src="banners/twp.png" class="logo" alt="twp" onclick="switchchan(8)">
+		<img src="banners/ftv.png" class="logo" alt="ftv" onclick="switchchan(9)">
+		<img src="banners/ftvone.png" class="logo" alt="ftvone" onclick="switchchan(10)">
+		<img src="banners/ftvnews.png" class="logo" alt="ftvnews" onclick="switchchan(11)">
+		<img src="banners/ftvtw.png" class="logo" alt="ftvtw" onclick="switchchan(12)">
+		<img src="banners/titv.png" class="logo" alt="titv" onclick="switchchan(14)">
+		<img src="banners/ttvnews.png" class="logo" alt="ttvnews" onclick="switchchan(16)">
+		<img src="banners/cts.png" class="logo" alt="cts" onclick="switchchan(19)">
+		<img src="banners/legyuan1.png" class="logo" alt="legyuan1" onclick="switchchan(22)">
+		<img src="banners/legyuan2.png" class="logo" alt="legyuan2" onclick="switchchan(23)">
+	</div>
+	
+</body>
+</html>
 
