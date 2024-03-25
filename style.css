@@ -1,0 +1,147 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	background-color: #c8e2c9;
+	text-align: center;
+	font-family: main;
+}
+
+h1 {
+	font-family: main;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+h2 {
+	font-family: main;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+h3 {
+	font-family: main;
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+a {
+	color: #1d3994;
+	line-height: 1.4;
+}
+
+button {
+	background-color: #0065f2;
+	color: white;
+	border: none;
+	font-family: main;
+}
+
+.menubar {
+	width: 50%;
+	height: 48px;
+	text-align: center;
+	margin-right: -5px;
+}
+
+.menuitem {
+	width: 20%;
+	height: 48px;
+	display: inline-grid;
+	cursor: pointer;
+	margin-left: -5px;
+	font-family: main;
+}
+
+.menutext {
+	padding: 14px;
+	cursor: pointer;
+	font-size: 18px;
+	color: white;
+}
+
+.main {
+	width: 50%;
+	height: 666px;
+	text-align: center;
+	background-color: white;
+	display: block;
+	padding: 0;
+	margin-top: -22px;
+}
+
+.cc {
+	width: 50%;
+	height: 222px;
+	text-align: center;
+	background-color: white;
+	display: grid;
+}
+
+.mobbar {
+	display: none;
+}
+
+.mobnav {
+	display: none;
+}
+
+.mobnavitem {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	h3 {
+		max-width: 380px;
+	}
+	.menubar {
+	 display:none;	
+	}
+	
+	.main {
+		width: 100%;
+	}
+	
+	.cc {
+		width: 100%;
+	}
+	
+	.mobbar {
+		display: block;
+		width: 100%;
+		height: 55px;
+		background-color: #46a667;
+		text-align: left;
+	}
+	
+	.mobnavbutt2 {
+		display:none;
+	}
+	
+	.mobnav {
+		display: none;
+		width: 100%;
+		height: auto;
+		list-style: none;
+		background-color: #46a667;
+		margin-top: 0px;
+		position: fixed;
+	}
+	
+	.mobnavurl {
+		color: white;
+		font-size: 24pt;
+	}
+	
+	.mobnavitem {
+		padding: 14px 16px;
+		margin-left: -40px;
+		display: block;
+	}
+}
