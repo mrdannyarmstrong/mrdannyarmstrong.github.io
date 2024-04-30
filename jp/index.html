@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>田尼のウェブサイト</title>
+		<link rel="icon" href="../favicon.png">
+		<link rel="stylesheet" href="../style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="UTF-8">
+		<meta name="description" content="田尼のウェブサイト">
+		<meta name="keywords" content="田尼のウェブサイト,">
+		<meta name="author" content="田尼">
+		<meta name="language" content="ja-jp">
+		<link rel="apple-touch-icon" href="../touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="../touch-icon-ipad-retina.png">
+		<script src="../switcher.js"></script>
+		<script src="../mobnav.js"></script>
+		<script>
+			onload = function() {
+				urlchk();
+
+			}
+		</script>
+	<body>
+		<center>
+			<div class="menubar">
+				<div class="menuitem" style="background-color: #ff0234;" onclick="gohome()">
+					<span class="menutext">ホーム</span>
+				</div>
+				<div class="menuitem" style="background-color: #7dcd00;" onclick="gocode()">
+					<span class="menutext">コード</span>
+				</div>
+				<div class="menuitem" style="background-color: #66a2de;" onclick="gomusic()">
+					<span class="menutext">ミュージック</span>
+				</div>
+				<div class="menuitem" style="background-color: #00508f;" onclick="goabout()">
+					<span class="menutext">インフォ</span>
+				</div>
+				<div class="menuitem" style="background-color: #7749f5;" onclick="gocontact()">
+					<span class="menutext">コンタクト</span>
+				</div>
+			</div>
+			
+			<div class="mobbar">
+				<img src="../mobnav.svg" class="mobnavbutt" id="mobnavbutt" onclick="showmobnav()">
+				<img src="../mobnav.svg" class="mobnavbutt2" id="mobnavbutt2" onclick="hidemobnav()">
+			</div>
+			
+			<ul class="mobnav" id="mobnav">
+				<li><a href="#Home" class="mobnavurl" onclick="gohome()">ホーム</a></li>
+				<li><a href="#Code" class="mobnavurl" onclick="gocode()">コード</a></li>
+				<li><a href="#Music" class="mobnavurl" onclick="gomusic()">ミュージック</a></li>
+				<li><a href="#About" class="mobnavurl" onclick="goabout()">インフォ</a></li>
+				<li><a href="#Contact" class="mobnavurl" onclick="gocontact()">コンタクト</a></li>
+			</ul>
+			
+			<div class="main" id="home">
+				<h1>ホーム</h1>
+				<h2>最新のコンテンツ：</h2>
+				<a href="#code" onclick="gocode()"><img src="../code.svg"> オーバーワールドサバイバル</a>
+				<br />
+				<a href="#code" onclick="gocode()"><img src="../code.svg"> パイナリー</a>
+			</div>
+			<div class="main" id="code" style="display: none;">
+				<h1>コード</h1>
+				<h3><img src="../code.svg"> オーバーワールドサバイバル:  テキストベースの Python ゲーム <a href="https://github.com/mrdannyarmstrong/Overworld-Survival/archive/refs/tags/1.0.0.zip"><button>ダウンロード</button></a></h3>
+				<h3><img src="../code.svg"> パイナリー： ループするシンプルなバイナリジェネレーター <a href="https://github.com/mrdannyarmstrong/Pynary/archive/refs/tags/1.0.zip"><button>ダウンロード</button></a></h3>
+
+			</div>
+			<div class="main" id="music" style="display: none;">
+				<h1>ミュージック</h1>
+				<h2>コンテンツは近日公開予定です</h2>
+			</div>
+			<div class="main" id="about" style="display: none;">
+				<h1>インフォ</h1>
+				<h2>こんにちは、私は田尼です。23歳のプログラマーで、ゲーマーであり、音楽家です。</h2>
+			</div>
+			<div class="main" id="contact" style="display: none;">
+				<h1>コンタクト</h1>
+				<h3>
+					<a href="https://instagram.com/mrdannykun"><img src="../instagram.svg" width="48" height="48"></a>
+					<a href="mailto:mrdannyarmstrong@gmail.com"><img src="../email.svg" width="72" height="48"></a>
+				</h3>
+			</div>
+			<div class="cc">
+				<h3>&copy;2000-2024 田尼</h3>
+				<h3><a href="../">English</a> | <a href="#">日本語</a></h3>
+				<h3><a href="https://instagram.com/mrdannykun"><img src="../instagram.svg"></a>  <a href="https://github.com/mrdannyarmstrong"><img src="../github.svg"></a></h3>
+			</div>
+		</center>
+	</body>
+</html>
