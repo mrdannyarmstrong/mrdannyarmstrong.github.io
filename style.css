@@ -2,13 +2,13 @@
 	font-family: "main";
 	src: url("main.ttf")
 }
-
+ 
 body {
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 	width: auto;
 	height: auto;
-	background-color: #c8e2c9;
+	background-color: #B2E9DE;
 	text-align: center;
 	font-family: main;
 }
@@ -17,12 +17,14 @@ h1 {
 	font-family: main;
 	font-weight: normal;
 	line-height: 1.4;
+	margin-top: 40px
 }
 
 h2 {
 	font-family: main;
 	font-weight: normal;
 	line-height: 1.4;
+	max-width: 500px;
 }
 
 h3 {
@@ -32,55 +34,101 @@ h3 {
 }
 
 a {
-	color: #1d3994;
+	color: black; 
 	line-height: 3;
 }
 
 button {
-	background-color: #0065f2;
-	color: white;
-	border: none;
-	font-family: main;
+	background: #fdfdfd;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    border-radius: 15px;
+	  font-family: main;
+	margin-left: 15spx;
 }
 
+button:hover {
+	box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.4);
+  filter: brightness(1.05);
+}
+
+.bg {
+	background-image: url(bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+
+.content {
+	position: absolute;
+	margin-top: 0px;
+	transform: translateX(0%);
+	width: 100%;
+}
+
+
 .menubar {
-	width: 50%;
+	width: 60%;
 	height: 48px;
 	text-align: center;
 	margin-right: -5px;
 }
 
 .menuitem {
-	width: 20%;
+	width: 20.2%;
 	height: 48px;
 	display: inline-grid;
 	cursor: pointer;
 	margin-left: -5px;
 	font-family: main;
+	background: #fbfbfb;
+	border: none;
+	box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.6);
+	cursor: pointer;
+}
+
+.menuitem:hover {
+	box-shadow: 5px 2px 15px rgba(63, 77, 98, 0.7), -5px -5px 10px rgba(255, 255, 255, 0.4);
+  filter: brightness(1.05);
 }
 
 .menutext {
-	padding: 14px;
+	padding: 20px 40px;
 	cursor: pointer;
-	font-size: 18px;
-	color: white;
+	font-size: 20px;
+	color: black;
 }
 
 .main {
-	width: 50%;
+	width: 60%;
 	height: 666px;
 	text-align: center;
-	background-color: white;
 	display: block;
-	padding: 0;
-	margin-top: -22px;
+	margin-top: -40px;
+	background: #fdfdfd;
+  border: none;
+  font-size: 15px;
+  box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .cc {
-	width: 50%;
+	width: 60%;
 	height: 222px;
 	text-align: center;
-	background-color: white;
+	background-color: #fdfdfd;
+	box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.0), -5px -5px 10px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 	display: grid;
 }
 
@@ -97,6 +145,10 @@ button {
 }
 
 @media (max-width: 600px) {
+	body {
+		overflow-x: hidden;
+	}
+	
 	h3 {
 		max-width: 380px;
 	}
@@ -106,6 +158,7 @@ button {
 	
 	.main {
 		width: 100%;
+		text-align: center;
 	}
 	
 	.cc {
@@ -116,8 +169,12 @@ button {
 		display: block;
 		width: 100%;
 		height: 55px;
-		background-color: #46a667;
+		background: #fbfbfb;
+    border: none;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.5), -5px -5px 10px rgba(63, 76, 98, 0.4);
 		text-align: left;
+		position: relative;
 	}
 	
 	.mobnavbutt2 {
@@ -129,13 +186,17 @@ button {
 		width: 100%;
 		height: auto;
 		list-style: none;
-		background-color: #46a667;
+		background: #fbfbfb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px rgba(63, 77, 98, 0.0), -5px -5px 10px rgba(63, 76, 98, 0.4);
+		position: absolute;
 		margin-top: 0px;
-		position: fixed;
 	}
 	
 	.mobnavurl {
-		color: white;
+		color: black;
 		font-size: 24pt;
 	}
 	
