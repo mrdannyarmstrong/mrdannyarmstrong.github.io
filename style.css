@@ -24,7 +24,6 @@ h2 {
 	font-family: main;
 	font-weight: normal;
 	line-height: 1.4;
-	max-width: 500px;
 }
 
 h3 {
@@ -147,6 +146,10 @@ button:hover {
 @media (max-width: 600px) {
 	body {
 		overflow-x: hidden;
+	}
+	
+	h2 {
+		max-width: 500px
 	}
 	
 	h3 {
