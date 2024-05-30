@@ -2,9 +2,9 @@
 	font-family: "main";
 	src: url("main.ttf")
 }
- 
+
 body {
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	width: auto;
 	height: auto;
@@ -47,6 +47,7 @@ button {
     border-radius: 15px;
 	  font-family: main;
 	margin-left: 15spx;
+	color: black;
 }
 
 button:hover {
