@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>TV Lago</title>
+		<link rel="icon" href="favico.png">
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="favico.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="UTF-8">
+		<meta name="description" content="TV Lago">
+		<meta name="keywords" content="Assobiador, TV, TV Lago">
+		<meta name="author" content="Daniel">
+		<meta name="language" content="pt-us">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+		<script src="time.js"></script>
+		<script>
+		var timerID = setInterval(function () {
+			gettime();
+		}, 60 * 1);
+	</script>
+	<body>
+		<div class="bg" id ="bg">
+		</div>
+		<div class="content">
+			<h1 id="clock" class="clock">XX:XX</h1>
+			<iframe src="https://mrdannyarmstrong.github.io/tvlago/v1/main.html" class="main">
+
+			</iframe>
+		</div>
+	</body>
+</html>
