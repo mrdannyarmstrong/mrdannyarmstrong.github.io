@@ -37,7 +37,7 @@ function loadchannels() {
             const mainui = document.getElementById("mainui").innerHTML += '<div class="channel"></div>';
         }
         else {
-            const mainui = document.getElementById("mainui").innerHTML += '<div class="channel"><a href="'  + channeldb[i][0] +  '"><img src="'  + channeldb[i][1] +  '" class="logo" onmouseover="channeru()"></a></div>';
+            const mainui = document.getElementById("mainui").innerHTML += '<div class="channel"><a href="'  + channeldb[i][0] +  '"><img src="'  + channeldb[i][1] +  '" class="logo"></a></div>';
         }
     }
 }
