@@ -17,19 +17,39 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
 		<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 		<script src="time.js"></script>
+		<script src="https://mrdannyarmstrong.github.io/tvlago/v2/back.js"></script>
 		<script>
-		var timerID = setInterval(function () {
-			gettime();
-		}, 60 * 1);
-	</script>
+			var timerID = setInterval(function () {
+				gettime();
+			}, 60 * 1);
+			function retry() {
+				try {
+				runbackend()
+				}
+				catch {
+					const mainui = document.getElementById("mainui").innerHTML = '<h1>An error has occured</h1><h2>Please try again</h2><button onclick="runbackend()">Try again</button>'
+				}
+			}
+				
+		</script>
+		<script>
+			onload = function() {
+				try {
+				runbackend()
+				}
+				catch {
+					const mainui = document.getElementById("mainui").innerHTML = '<h1>An error has occured</h1><h2>Please try again</h2><button onclick="retry()">Try again</button>'
+				}
+			}
+		</script>
 	<body>
 		<div class="bg" id ="bg">
 		</div>
 		<div class="content">
 			<h1 id="clock" class="clock">XX:XX</h1>
-			<iframe src="https://mrdannyarmstrong.github.io/tvlago/v1/main.html" class="main">
-
-			</iframe>
+			<div class="main" id="mainui">
+				<img src="loading.gif" class="logo">
+			</difv>
 		</div>
 	</body>
 </html>
