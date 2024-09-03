@@ -17,7 +17,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
 		<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 		<script src="time.js"></script>
-		<script src="https://mrdannyarmstrong.github.io/tvlago/v2/back.js"></script>
+		<script src="https://mrdannyarmstrong.github.io/tvlago/v3/back.js"></script>
 		<script>
 			var timerID = setInterval(function () {
 				gettime();
@@ -40,6 +40,7 @@
 				catch {
 					const mainui = document.getElementById("mainui").innerHTML = '<h1>An error has occured</h1><h2>Please try again</h2><button onclick="retry()">Try again</button>'
 				}
+				holiday();
 			}
 		</script>
 	<body>
