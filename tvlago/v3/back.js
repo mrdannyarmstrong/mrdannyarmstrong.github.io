@@ -30,7 +30,11 @@ function loadchannels() {
         ["https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/recordtv.svg"],
         ["https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/sbt.svg"],
         ["https://tbc.zoeweb.tv/tbc/tbc/playlist.m3u8", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/tvculture.svg"],
-        ["https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/redetv.svg"]
+        ["https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/redetv.svg"],
+        ["https://www.rtvs.sk/embed/live/1", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/jed1.svg"],
+        ["https://www.rtvs.sk/embed/live/2", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/jed2.svg"],
+        ["https://media.cms.markiza.sk/embed/markiza-live?autoplay=any", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/markiza.svg"],
+        ["https://media.cms.markiza.sk/embed/dajto-live?autoplay=any", "https://mrdannyarmstrong.github.io/tvlago/v3/banners/dajto.svg"]
     ];
     for (var i = 0; i < channeldb.length; i++) {  
         if (channeldb[i][0] == "NULL") {
