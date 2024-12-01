@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>TV Fusão</title>
+	<link rel="icon" href="favico.png">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta charset="UTF-8">
+	<meta name="description" content="TV Fusão">
+	<meta name="keywords" content="TV Fusão, TV, TV">
+	<meta name="author" content="Daniel">
+	<meta name="language" content="pt-US">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+
+	<script src="time.js"></script>
+	<script src="https://mrdannyarmstrong.github.io/tvfusao/v1/back.js"></script>
+	<script>
+		var timerID = setInterval(function () {
+			gettime();
+		}, 60 * 1);
+		function retry() {
+			location.reload();
+		}
+			
+	</script>
+	<script>
+		onload = function() {
+			startupsfx.play();
+			try {
+			runbackend()
+			}
+			catch {
+				const mainui = document.getElementById("mainui").innerHTML = '<h1>Ocorreu um erro</h1><h2>Por favor tente novamente</h2><button onclick="retry()">Tente novamente</button>'
+			}
+		}
+	</script>
+	<body>
+		<audio id="startupsfx">
+			<source src="startup.wav" type="audio/mp3">
+		</audio>
+		<div class="main">
+			<h1 id="clock" class="clock">XX:XX</h1>
+		</div>
+		<div class="main" id="mainui">
+			<img src="load.gif" class="logo">
+		</div>
+</body>
+</html>
