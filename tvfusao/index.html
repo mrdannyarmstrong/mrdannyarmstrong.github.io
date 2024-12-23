@@ -17,24 +17,21 @@
 	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 
 	<script src="time.js"></script>
-	<script src="https://mrdannyarmstrong.github.io/tvfusao/v1/back.js"></script>
+	<script src="channeru.js"></script>
+	<script src="server.js"></script>
+	<script src="https://mrdannyarmstrong.github.io/tvfusao/v2/back.js"></script>
 	<script>
 		var timerID = setInterval(function () {
 			gettime();
 		}, 60 * 1);
-		function retry() {
-			location.reload();
-		}
-			
-	</script>
-	<script>
 		onload = function() {
 			startupsfx.play();
 			try {
 			runbackend()
 			}
 			catch {
-				const mainui = document.getElementById("mainui").innerHTML = '<h1>Ocorreu um erro</h1><h2>Por favor tente novamente</h2><button onclick="retry()">Tente novamente</button>'
+				const mainui = document.getElementById("mainui").innerHTML = '<h1>Ocorreu um erro</h1><h2>Por favor tente novamente</h2><button onclick="document.location.reload()">Tente novamente</button>'
+				startupsfx.play();
 			}
 		}
 	</script>
