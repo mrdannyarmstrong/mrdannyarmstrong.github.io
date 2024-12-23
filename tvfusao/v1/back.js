@@ -1,4 +1,4 @@
-function runbackend() {
+﻿function runbackend() {
     needupdate = checkupdate();
     if (needupdate == 1) {
         const mainui = document.getElementById("mainui").innerHTML = '<h1>É necessária uma atualização</h1><h2>Pressione atualizar para descarregar a versão mais recente</h2><a shref=""><button>Atualizar</button></a>'
