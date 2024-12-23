@@ -10,7 +10,7 @@
 }
 
 function checkupdate() {
-    needupdate = 0;
+    needupdate = 1;
     return needupdate;
 }
 function loadchannels() {
