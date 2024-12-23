@@ -14,7 +14,7 @@ function checkupdate() {
     return needupdate;
 }
 function loadchannels() {
-    let channeldb = ["NULL"];
+    let channeldb = [];
     for (var i = 0; i < channeldb.length; i++) {  
         if (channeldb[i][0] == "NULL") {
             const mainui = document.getElementById("mainui").innerHTML += '<div class="channel"></div>';
