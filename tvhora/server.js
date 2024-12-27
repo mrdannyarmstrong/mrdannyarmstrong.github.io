@@ -2,7 +2,7 @@
     needupdate = checkupdate();
     if (needupdate == 1) {
         url = geturl();
-        const mainui = document.getElementById("mainui").innerHTML = '<h1>アップデートが必要です</h1><h2>最新のアップデートをダウンロードするには「アップデート」を押してください</h2><a href="' + url + '"><button>アップデート</button></a>'
+        const mainui = document.getElementById("mainui").innerHTML = '<h1>Potrebná aktualizácia</h1><h2>Stlačením tlačidla "Aktualizovať" stiahnete najnovšie aktualizácie</h2><a href="' + url + '"><button>Aktualizovať</button></a>'
     }
     if (needupdate == 0) {
         const mainui = document.getElementById("mainui").innerHTML = '';
