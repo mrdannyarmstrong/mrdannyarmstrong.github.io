@@ -1,3 +1,0 @@
-function channeru() {
-	channerusfx.play();
-}
