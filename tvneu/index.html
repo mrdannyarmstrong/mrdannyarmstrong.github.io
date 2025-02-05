@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Neu TV</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favico.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="language" content="en/jp">
+	<meta name="title" content="Neu TV">
+	<meta name="author" content="Daniel">
+	<meta name="description" content="Neu TV">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<script src="time.js"></script>
+	<script src="hover.js"></script>
+	<script src="light.js"></script>
+	<script src="com.js"></script>
+	<script src="https://backend-mrdannyarmstrong.github.io/tvneu/v1/back.js"></script>
+	<script>
+		var timerID = setInterval(function () {
+			gettime();
+			
+		}, 60 * 1);
+		
+		window.onload = function() {
+			holiday();
+			lightchk();
+			try {
+			runbackend()
+			}
+			catch {
+				const topbar = document.getElementById("topbar").style.display = "none";
+				const mainui = document.getElementById("mainui").innerHTML = '<h1>An error has occured</h1><h2>Please try again<h2><button onclick="document.location.reload()">Try Again</button>'
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<audio autoplay>
+		<source src="startup.wav" type="audio/mp3">
+	</audio>
+	<audio id="hover">
+		<source src="hover.wav" type="audio/mp3">
+	</audio>
+	<audio id="selected">
+		<source src="select.wav" type="audio/mp3">
+	</audio>
+	
+	<div class="bg" id ="bg">
+	</div>
+		<div class="content">
+			
+			<div class="topbar" id="topbar">
+					<h class="clock" id="time">TIME</h>
+					<div class="switch" id="switchbutt" onclick="light()"></div>
+			</div>
+		
+		
+			<div class="main" id="mainui">
+
+			</div>
+			
+		</div>
+</body>
+</html>
+
