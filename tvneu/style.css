@@ -1,0 +1,128 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf")
+}
+
+body {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	font-family: main;
+	overflow: auto;
+	background-color: #202225;
+}
+
+button {
+	font-family: main;
+	background-color: #454950;
+	color: white;
+	border: solid 5px #454950;
+	border-radius: 5px;
+	font-weight: 800;
+}
+
+button:hover {
+	background-color: #008080;
+	border: solid 5px #008080;
+}
+
+.main {
+	width: 80%;
+	height: auto;
+	display: flow-root;
+	overflow: hidden;
+	margin-left: 10%;
+	text-align: center;
+	color: white;
+}
+ 
+.bg {
+	background-position: center;1
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+	
+.content {
+	  position: absolute;
+	  left: 50%; 
+	  margin-top: 0px;
+	  transform: translateX(-50%);
+	  width: 100%;
+}
+
+.channel {
+	width: 280px;
+	height: 280px;
+	border-radius: 25px;
+	display: inline-block;
+	overflow: hidden;
+	border: solid 5px #454950;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.channel:hover {
+	border: solid 5px #008080;
+}
+
+.logo {
+	width: 280px;
+	height: 280px;
+}
+
+.topbar {
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clock {
+	font-family: main;
+	font-size: 48px;
+	color: white;
+	display: inline-block;
+}
+
+.switch {
+	width: 34pt;
+	height: 34pt;
+	background-image: url(switch.svg);
+	background-repeat: no-repeat;
+	background-size: 34pt, 34pt;
+	display: inline-block;
+}
+
+@media (max-width: 600px) {
+
+	body {
+		width: auto;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		font-family: main;
+		overflow: auto;
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	.clock {
+	   font-family: main;
+	   font-size: 48px;
+	   color: white;
+	}
+}
