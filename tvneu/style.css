@@ -115,6 +115,12 @@ a {
 
 	.main {
 		width: 100%;
+		margin-left: 0px;
+	}
+
+	.topbar {
+		width: 100%;
+		margin-left: 0px;
 	}
 
 	a {
@@ -124,6 +130,5 @@ a {
 	.clock {
 	   font-family: main;
 	   font-size: 48px;
-	   color: white;
 	}
 }
