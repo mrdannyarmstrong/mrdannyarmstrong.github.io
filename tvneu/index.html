@@ -17,9 +17,9 @@
 	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
 	<script src="time.js"></script>
 	<script src="hover.js"></script>
-	<script src="dark.js"></script>
+	<script src="light.js"></script>
 	<script src="com.js"></script>
-	<script src="https://backend-mrdannyarmstrong.github.io/tvneu/v3/back.js"></script>
+	<script src="https://backend-mrdannyarmstrong.github.io/tvneu/v2/back.js"></script>
 	<script>
 		var timerID = setInterval(function () {
 			gettime();
@@ -27,7 +27,8 @@
 		}, 60 * 1);
 		
 		window.onload = function() {
-			darkchk();
+			holiday();
+			lightchk();
 			try {
 			runbackend()
 			}
@@ -56,7 +57,7 @@
 			
 			<div class="topbar" id="topbar">
 					<h class="clock" id="time">TIME</h>
-					<div class="switch" id="switchbutt" onclick="dark()"></div>
+					<div class="switch" id="switchbutt" onclick="light()"></div>
 			</div>
 		
 		
