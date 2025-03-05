@@ -18,10 +18,18 @@
             onload = function() {
                 backcom();
             }
+            var timerID = setInterval(function () {
+                 try {
+                    gettime();
+                 }
+                 catch {
+                    gettime2();
+                 }
+            }, 60 * 1);
         </script>
     </head>
     <body>
-            <button class="clockbg"><h class="clock">00:00</h></button>
+            <button class="clockbg"><h class="clock" id="time">00:00</h></button>
             <br>
             <div class="mainui">
                 <br>
