@@ -122,6 +122,22 @@ function backcom() {
             ch15url.href = channels[15][0]
             ch15img.src = channels[15][1]
         }
+		if (channels[16][0] == "NULL") {
+            ch16url.href = "#"
+            ch16img.src = "nochan.gif"
+        }
+        else {
+            ch16url.href = channels[16][0]
+            ch16img.src = channels[16][1]
+        }
+		if (channels[17][0] == "NULL") {
+            ch17url.href = "#"
+            ch17img.src = "nochan.gif"
+        }
+        else {
+            ch17url.href = channels[17][0]
+            ch17img.src = channels[17][1]
+        }
         channels = [0]
     }
     catch {
@@ -156,5 +172,9 @@ function backcom() {
         ch14img.src = "nochan.gif"
         ch15url.href = "#"
         ch15img.src = "nochan.gif"
+		ch16url.href = "#"
+        ch16img.src = "nochan.gif"
+		ch17url.href = "#"
+        ch17img.src = "nochan.gif"
     }
 }
