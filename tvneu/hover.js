@@ -1,3 +1,0 @@
-function hoverfx() {
-    hover.play();
-}
