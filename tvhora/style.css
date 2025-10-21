@@ -1,0 +1,90 @@
+@font-face {
+	font-family: "Tahoma";
+	src: url("tahoma.ttf");
+}
+
+body {
+    background-color: rgb(40,50,98);
+    font-family: Tahoma;
+    background-image: url(none);
+    background-repeat: no-repeat;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+th, td {
+    border: 2px solid rgba(0,0,0,0);
+}
+table {
+    background-color: none; 
+    color: white; 
+    width: 98%;
+}
+.mainui {
+    background-image: url(none); 
+    background-size: cover;
+    background-color: none;
+    width: 80%; 
+    height: auto;
+}
+.chbox {
+    width: 3%; 
+    height: 48px;
+    font-family: Tahoma;
+    background-color: #000000;
+    background-image: url(chbox.png);
+    background-size: cover;
+    text-align: center;
+    font-size: 24px;
+}
+.logobox {
+    width: 95%;
+    background-color: #000000;
+    background-image: url(logobox.png);
+    background-size: cover;
+}
+
+.logobox:hover {
+    background-image: url(hover.png);
+}
+
+.bg {
+	background-image: url(bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+	
+.content {
+	position: absolute; 
+	margin-top: 0px;
+	transform: translateX(0%);
+	width: 100%;
+}
+
+.tvbody {
+    background-color: rgb(0,0,0);
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .mainui {
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+    table {
+        width: 98%;
+    }
+}
