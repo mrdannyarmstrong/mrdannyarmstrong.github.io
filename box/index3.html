@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>TV Hora</title>
+    <link rel="icon" href="favico.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="cablecore.js"></script>
+    <!-- Load external JS file that defines getchannel() -->
+    <script src="https://backend-mrdannyarmstrong.github.io/tvhora/v1/cable.js"></script>
+    <script>
+        onload = function () {
+            bgm.volume = 0.02;
+            channels = getchannels();
+            cururl = getcurpath();
+            curpos = getpos(cururl);
+            setnav(curpos);
+            getdb(curpos);
+            var timerID = setInterval(function () {
+                maxsize(2);
+            }, 60 * 1);
+
+            const video = document.getElementById('video');
+            let videoSrc = cururl;
+
+            // If the URL contains joj.sk, rewrite it to use the proxy
+            if (videoSrc.includes('joj.sk')) {
+                const encodedUrl = encodeURIComponent(videoSrc);
+                videoSrc = `https://joj.zababyte2k.workers.dev/?url=${encodedUrl}`;
+            }
+
+            if (Hls.isSupported()) {
+                const hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function () {
+                    video.play();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+                video.addEventListener('loadedmetadata', function () {
+                    video.play();
+                });
+                video.addEventListener('error', function () {
+                    alert('connection error');
+                });
+            } else {
+                alert('connection error');
+            }
+            setnav(curpos);
+        };
+    </script>
+</head>
+<body>
+    <audio id="bgm" autoplay loop> 
+        <source src="bgm2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+    <audio id="hoversfx">
+        <source src="hover.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
+    <video id="video" autoplay></video>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <div class="infoboxtrig" id="infoboxtrig" onmouseover="infoboxctr(1)"></div>
+    <div class="infobox" id="infobox" style="display: none;" onmouseleave="infoboxctr(2)">
+        <h1 id="channelname">00 CHANNEL</h1>
+            <h2 id="channeldesc">No Info Available</h2>
+        <h3>
+            <a class="navico" id="goup" href="index.html" onclick="perf(1)" onmouseover="dohoversfx()">ᐃ</a>
+            <a class="navico" id="godown" href="index.html" onclick="perf(2)" onmouseover="dohoversfx()">ᐁ</a>
+            <a class="navico" href="index.html" onmouseover="dohoversfx()">Guide</a>
+        </h3>
+    </div>
+</body>
+</html>
