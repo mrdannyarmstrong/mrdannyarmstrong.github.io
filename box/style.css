@@ -1,0 +1,116 @@
+@font-face {
+	font-family: "main";
+	src: url("main.ttf");
+}
+
+body {
+    background-color: rgb(0,0,0);
+    font-family: main;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.infoboxtrig {
+    width: 100%;
+    height: 25px;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    bottom: 0;
+}
+
+.infobox {
+    width: 100%;
+    height: 200px;
+    background-image: url(main.png);
+    background-repeat: none;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    font-family: main;
+    color: white;
+}
+
+.navico {
+    color: white;
+    text-decoration: none;
+}
+
+.navico:hover {
+    color: #28c537
+}
+
+.guidebody {
+  font-family: main;
+	text-align: center;
+	background-color: #202225;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+button {
+	font-family: main;
+	background-color: rgba(0,0,0,0);
+	color: black;
+	border: none;
+	border-radius: 5px;
+	font-weight: 800;
+	background-image: url(button.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg {
+	background-image: url(bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+}
+	
+.content {
+	position: absolute; 
+	margin-top: 0px;
+	transform: translateX(0%);
+	width: 100%;
+}
+
+.clock {
+	font-weight: normal;
+	font-size: 38px;
+	font-weight: main;
+	color: white;
+}
+
+.mainui {
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	color: white;
+}
+
+.channel {
+	width: 280px;
+	height: 280px;
+	border-radius: 25px;
+	display: inline-block;
+	overflow: hidden;
+	background-image: url(chanbg.png);
+	border: solid 6px rgba(255,255,255,0.1);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.channel:hover {
+	border: solid 6px #28c537;
+}
+
+.logo {
+	width: 280px;
+	height: 280px;
+	border-radius: 10px;
+}
