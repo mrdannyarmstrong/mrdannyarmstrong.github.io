@@ -3,21 +3,16 @@
     <title>TV Hora</title>
     <link rel="icon" href="favico.png">
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="luna2.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="com.js"></script>
     <!-- Load external JS file that defines getchannel() -->
-    <script src="https://backend-mrdannyarmstrong.github.io/tvhora/v1/back.js"></script>
+    <script src="https://backend-mrdannyarmstrong.github.io/tvhora/v1/cable.js"></script>
     <script>
         onload = function () {
             channels = getchannels();
             cururl = getcurpath();
-            curpos = getpos(cururl);
-            setnav(curpos);
-            getdb(curpos);
             var timerID = setInterval(function () {
-                maxsize(2);
+                maxsize(1);
             }, 60 * 1);
 
             const video = document.getElementById('video');
@@ -47,11 +42,14 @@
             } else {
                 alert('connection error');
             }
-            setnav(curpos);
         };
     </script>
 </head>
-<body style="background-image: url(none); background-color: black;" class="tvbody">
+<body class="tvbody">
+    <audio id="hoversfx">
+        <source src="hover.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> 
     <video id="video" autoplay controls></video>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </body>
