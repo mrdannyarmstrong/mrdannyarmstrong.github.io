@@ -6,7 +6,7 @@
 body {
   font-family: main;
 	text-align: center;
-	background-color: #202225;
+	background-color: #004d9d;
 	margin: 0;
 	padding: 0;
 	overflow: auto;
@@ -44,7 +44,7 @@ button {
 
 .clock {
 	font-weight: normal;
-	font-size: 38px;
+	font-size: 42px;
 	font-weight: main;
 	color: white;
 }
@@ -54,6 +54,7 @@ button {
 	height: auto;
 	margin-left: 10%;
 	color: white;
+	margin-top: -10px;
 }
 
 .channel {
@@ -62,14 +63,16 @@ button {
 	border-radius: 25px;
 	display: inline-block;
 	overflow: hidden;
+	background-color: rgba(0,0,0,0);
 	background-image: url(chanbg.png);
-	border: solid 6px rgba(255,255,255,0.1);
+	background-size: 200%, 100%;
+	border: solid 6px rgba(110,110,110,0.0);
 	margin-left: 10px;
 	margin-top: 10px;
 }
 
 .channel:hover {
-	border: solid 6px #28c537;
+	border: solid 6px #3f9d00;
 }
 
 .logo {
