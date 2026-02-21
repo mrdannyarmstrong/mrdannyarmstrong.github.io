@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="com.js"></script>
     <!-- Load external JS file that defines getchannel() -->
-    <script src="https://backend-mrdannyarmstrong.github.io/tvhora/v2/cable.js"></script>
+    <script src="https://backend-mrdannyarmstrong.github.io/tvhora/v3/cable.js"></script>
     <script>
         onload = function () {
             channels = getchannels();
@@ -22,6 +22,10 @@
             if (videoSrc.includes('joj.sk')) {
                 const encodedUrl = encodeURIComponent(videoSrc);
                 videoSrc = `https://joj.zababyte2k.workers.dev/?url=${encodedUrl}`;
+            }
+            if (videoSrc.includes('utako.moe')) {
+                const encodedUrl = encodeURIComponent(videoSrc);
+                videoSrc = `https://jpntv.zababyte2k.workers.dev/?url=${encodedUrl}`;
             }
 
             if (Hls.isSupported()) {

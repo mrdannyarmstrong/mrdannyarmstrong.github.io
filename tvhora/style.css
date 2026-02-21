@@ -3,8 +3,13 @@
 	src: url("main.ttf");
 }
 
+@font-face {
+	font-family: "msgothic";
+	src: url("msgothic.ttf");
+}
+
 body {
-  font-family: main;
+  font-family: main, msgothic, Arial, Helvetica, sans-serif;
 	text-align: center;
 	background-color: #004d9d;
 	margin: 0;
@@ -20,6 +25,7 @@ button {
 	border: none;
 	border-radius: 5px;
 	font-weight: 800;
+	font-family: main, msgothic, Arial, Helvetica, sans-serif;
 	background-image: url(button.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -45,7 +51,7 @@ button {
 .clock {
 	font-weight: normal;
 	font-size: 42px;
-	font-weight: main;
+	font-family: main, msgothic, Arial, Helvetica, sans-serif;
 	color: white;
 }
 
