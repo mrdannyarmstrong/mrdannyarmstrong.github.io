@@ -1,1 +1,42 @@
-<html></html>
+<html>
+<head>
+    <title>Digivision</title>
+    <link rel="icon" href="favico.png">
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="favico.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favico.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favico.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="favico.png">
+    <link rel="stylesheet" href="guide.css" />
+    <script src="guidecore.js"></script>
+    <!-- Load external JS file that defines getchannel() -->
+    <script src="https://backend-mrdannyarmstrong.github.io/digivision/v1/cable.js"></script>
+    <script>
+        onload = function () {
+            try {
+                channels = getwebchannels();
+                bootguide();
+            }
+            catch {
+                alert("Connection Error")
+            }
+            var timerID = setInterval(function () {
+                getclock();
+            }, 60 * 1);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div class="clockbox">
+            <span class="clock" id="clock">00:00</span>
+        </div>
+        <div id="guidebody" class="guidebody">
+
+        </div>
+    </center>
+</body>
+</html>
