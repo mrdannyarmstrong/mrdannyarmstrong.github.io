@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>𒅴𒂠 IME: 𒊒𒈠𒉡</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	        <meta name="apple-mobile-web-app-capable" content="yes">
+            <script src="dict.js"></script>
+            <script>
+                function addchar2in(charin) {
+                    imein.value += charin;
+                    findime();
+                }
 
+                function findime() {
+                    imein.value = imein.value.toLowerCase()
+                    imesug.innerHTML = "";
+                    for (let i = 0; i < imedict.length; i++) {
+                        if (imein.value.includes(imedict[i][1]) || imein.value == imedict[i][1]) {
+                            let buffin = "<span onclick=\"addime('" + imedict[i][0] + "')\">" + imedict[i][0] + "</span>";
+                            imesug.innerHTML += buffin;
+                        }
+                    }
+                }
+
+                function addime(charin) {
+                    imeout.value += charin
+                    imein.value = ""
+                    imesug.innerHTML = "";
+                }
+            </script>
+            <script>
+                onload = function() {
+                    imedict = getimedict();
+                }
+            </script>
+            <style>
+                @font-face {
+                    font-family: "cuneiform";
+                    src: url(CuneiformOB.ttf);
+                }
+                body {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    overflow: auto;
+                    font-family: cuneiform;
+                    font-size: 18px;
+                }
+
+                button {
+                    font-family: cuneiform;
+                    font-size: 18px;
+                }
+
+                .sugbox {
+                    width: 333px;
+                    height: 32px;
+                    display: block;
+                    font-family: cuneiform;
+                }
+                .keyboard {
+                   width: 333px;
+                    height: 48px;
+                    display: block; 
+                    font-family: cuneiform;
+                }
+            </style>
+        </head>
+        <body>
+            <center>
+                <form>
+                    <input type="text" id="imein" style="width: 333px;" oninput="findime()">
+                </form>
+                <br>
+                <textarea rows="8" cols="45" style="resize: none;" id="imeout"></textarea>
+                <br>
+                <div class="sugbox" id="imesug"></div>
+                <br>
+                <div class="keyboard">
+                    <button onclick="addchar2in('è')">è</button>
+                    <button onclick="addchar2in('ĝ')">ĝ</button>
+                    <button onclick="addchar2in('š')">š</button>
+                </div>
+            </center>
+        </body>
+    </html>
