@@ -1,1 +1,53 @@
+<html>
+<head>
+    <title>Digivision</title>
+    <link rel="icon" href="favico.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="guide.css" />
+    <script src="guidecore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="favico.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favico.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favico.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="favico.png">
+    <!-- Load external JS file that defines getchannel() -->
+    <script src="https://backend-mrdannyarmstrong.github.io/digivision/v2/cable.js"></script>
+    <script>
+        onload = function () {
+            try {
+                channels = getwebchannels();
+                bootguide();
+            }
+            catch {
+                alert("Connection Error")
+            }
+            var timerID = setInterval(function () {
+                getclock();
+            }, 60 * 1);
+        }
+    </script>
+</head>
+<body>
+    <audio autoplay id="bgm" loop>
+        <source src="bgm1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio autoplay id="hoversfx">
+        <source src="hoversfx.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="bg" id ="bg">
+	</div>
+	<div class="content">
+        <center>
+            <div class="clockbox">
+                <span class="clock" id="clock">00:00</span>
+            </div>
+            <div id="guidebody" class="guidebody">
 
+            </div>
+        </center>
+    </div>
+</body>
+</html>
