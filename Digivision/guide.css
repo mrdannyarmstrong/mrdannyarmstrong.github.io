@@ -28,39 +28,28 @@ a {
 
 .chanbox {
     width: 280px;
-    background-image: url(chbox.png);
+    background-image: url(chanbg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 280px;
     display: inline-grid;
     margin-left: 10px;
     margin-top: 10px;
-    border: solid 6px rgba(255,255,255,0.4);
-    background-color: rgba(128,128,128,0.2);
-    border-radius: 15px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px)
+    border: solid 6px rgba(255,255,255,0.2);
 }
 
 .chanbox:hover {
-    border: solid 6px transparent;
-    border-image-source: linear-gradient(0deg, #6115adff, #005e8cff);
-    border-image-slice: 1;
-    border-radius: 15px;
+    border: solid 6px #00d929;
 }
 
 .clockbox {
     width: 100%;
-    height: 38px;
-    background-color: #c2e3f2;
-    background-color: rgba(0,0,0,0.2);
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px)
+    height: 48px;
 }
 
 .clock {
     font-size:36px;
-    color: #FFFF;
+    color: white;
 }
 
 .bg {
@@ -78,14 +67,4 @@ a {
 	margin-top: 0px;
 	transform: translateX(0%);
 	width: 100%;
-}
-
-@media (max-width: 600px;) {
-    .guidebody {
-        width: 100%;
-    }
-    .chanbox {
-        display: grid;
-        margin-left: -10px;
-    }
 }
