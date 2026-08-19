@@ -1,13 +1,41 @@
-<DOCTYPE html>
 <html>
-	<head>
-	<title>Pestech28</title>
-	</head>
-	<body>
-		<script>
-            onload = function() {
-                window.location = "https://pestech28.github.io/digivision";
+<head>
+    <title>Digivision</title>
+    <link rel="icon" href="favico.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="guide.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="guidecore.js"></script>
+    <!-- Load external JS file that defines getchannel() -->
+    <script src="https://pestech28.github.io/back/digivision/v3r5054/cable.js"></script>
+    <script>
+        onload = function () {
+            try {
+                channels = getwebchannels();
+                bootguide();
             }
-        </script>
-	</body>
+            catch {
+                alert("Chyba pripojenia")
+            }
+            var timerID = setInterval(function () {
+                getclock();
+            }, 60 * 1);
+        }
+    </script>
+</head>
+<body>
+    <div class="bg" id ="bg">
+	</div>
+	<div class="content">
+        <center>
+            <div class="clockbox">
+                <span class="clock" id="clock">00:00</span>
+            </div>
+            <div id="guidebody" class="guidebody">
+
+            </div>
+        </center>
+    </div>
+</body>
 </html>
