@@ -23,28 +23,27 @@ a {
     text-align: center;
     border-collapse: collapse;
     width: 85%;
-    margin-top: 48px;
 }
 
 .chanbox {
     width: 280px;
-    background-image: url(chanbg.png);
+    background-image: url(chbox.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 280px;
     display: inline-grid;
     margin-left: 10px;
     margin-top: 10px;
-    border: solid 6px rgba(255,255,255,0.2);
 }
 
 .chanbox:hover {
-    border: solid 6px #00d929;
+    background-image: url(chboxhover.png);
 }
 
 .clockbox {
     width: 100%;
     height: 48px;
+    background-color: rgba(0,0,0,0.2)
 }
 
 .clock {
