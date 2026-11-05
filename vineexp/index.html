@@ -1,1 +1,41 @@
-<html></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vine EXP</title>
+        <link rel="icon" href="favico.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180.png">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <script src="https://backend-mrdannyarmstrong.github.io/vineexp/backend.js"></script>
+        <script src="engine.js"></script>
+        <script>
+            onload = function() {
+                backend = getbackend();
+                engine();
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="topbar">
+                <img src="res/logo.png" height="24" alt="Vine" style="margin-top: 10px;">
+            </div>
+            <div class="main" id="mainui">
+                
+            </div>
+            <div class="bottombar">
+                <img src="res/home_active.png" alt="Home" style="margin-left: 21px;" height="24">
+                <img src="res/search_inactive.png" alt="Search" style="margin-left: 33px;" height="24">
+                <img src="res/upload.png" alt="Upload" style="margin-left: 26px;">
+                <img src="res/notification_inactive.png" alt="Notification" style="margin-left: 25px;" height="24">
+                <img src="res/profile_inactive.png" alt="Profile" style="margin-left: 33px;" height="24">
+            </div>
+        </center>
+    </body>
+</html>
