@@ -1,13 +1,13 @@
 @font-face {
-	font-family: "main";
-	src: url("main.ttf");
+	font-family: "rodin";
+	src: url("rodin.otf");
 }
- 
+
 body {
     width: 100%;
     height: 100%;
     background-color: #2038a2;
-    font-family: main;
+    font-family: "rodin", Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -34,16 +34,17 @@ a {
     display: inline-grid;
     margin-left: 10px;
     margin-top: 10px;
+    border: solid 0px rgba(255,255,255,0.2);
 }
 
 .chanbox:hover {
     background-image: url(chboxhover.png);
+    border: solid 0px #00CC22;
 }
 
 .clockbox {
     width: 100%;
     height: 48px;
-    background-color: rgba(0,0,0,0.2)
 }
 
 .clock {

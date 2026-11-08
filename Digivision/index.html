@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Digivision</title>
+    <title>Digivison</title>
     <link rel="icon" href="favico.png">
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="guide.css" />
@@ -8,7 +8,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
     <script src="guidecore.js"></script>
     <!-- Load external JS file that defines getchannel() -->
-    <script src="https://backend-mrdannyarmstrong.github.io/digivision/v3r5054/cable.js"></script>
+    <script src="https://backend-piestech28.github.io/digivision/cable.js"></script>
     <script>
         onload = function () {
             try {
@@ -16,7 +16,7 @@
                 bootguide();
             }
             catch {
-                alert("Chyba pripojenia")
+                alert("Connection Errror")
             }
             var timerID = setInterval(function () {
                 getclock();
@@ -35,6 +35,7 @@
             <div id="guidebody" class="guidebody">
 
             </div>
+            <div class="goldidol" id="goldidol" onclick="bootsecretguide()"></div>
         </center>
     </div>
 </body>

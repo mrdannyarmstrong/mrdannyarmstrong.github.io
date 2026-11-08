@@ -7,11 +7,10 @@ function bootguide() {
             console.log("NULL Channel skipped")
         } 
         else {
-            guidebody.innerHTML += '<a href="' + channels[i][0] + '"><div class="chanbox"><img src="' + channels[i][1] + '"></a></div>'
+            guidebody.innerHTML += '<a href="' + channels[i][0] + '"><div class="chanbox" onmouseover="hoversfx.play()"><img src="' + channels[i][1] + '"></a></div>'
         }
     }
 }
-
 
 function getclock() {
     const now = new Date;
