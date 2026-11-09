@@ -1,1 +1,36 @@
+<html>
+<head>
+    <title>PolskaCube</title>
+    <link rel="icon" href="favico.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="guide.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="guidecore.js"></script>
+    <script src="https://backend-mrdannyarmstrong.github.io/polskacube/cable.js"></script>
+    <script>
+        onload = function () {
+            try {
+                channels = getwebchannels();
+                bootguide();
+            }
+            catch {
+                alert("Connection Errror")
+            }
+            var timerID = setInterval(function () {
+                getclock();
+            }, 60 * 1);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <div class="clockbox">
+                <span class="clock" id="clock">00:00</span>
+        </div>
+        <div id="guidebody" class="guidebody">
 
+        </div>
+        </center>
+</body>
+</html>
